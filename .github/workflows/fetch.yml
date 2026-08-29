@@ -1,0 +1,38 @@
+name: Daily fetch
+
+on:
+  schedule:
+    # UTC 时间；北京时间 = UTC + 8
+    - cron: '30 0 * * *'   # 北京 08:30
+    - cron: '30 4 * * *'   # 北京 12:30
+    - cron: '30 8 * * *'   # 北京 16:30
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch and build
+        run: python fetch.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json index.html store.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "daily fetch $(date -u +%F-%H:%M)"
+            git push
+          fi
