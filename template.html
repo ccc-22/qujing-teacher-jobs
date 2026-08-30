@@ -54,10 +54,13 @@
   .b.region-near { background: #eef4ff; color: #3a5fc8; }
   .b.region-other { background: var(--gray-soft); color: var(--ink2); }
   .b.type { background: var(--gray-soft); color: var(--ink2); }
+  .b.type2 { background: #eef4ff; color: #3a5fc8; }
   .b.english { background: #fff3e0; color: #d97706; }
+  .b.unknown { background: var(--gray-soft); color: var(--ink2); }
   .b.ok { background: var(--green-soft); color: var(--green); }
   .b.check { background: var(--amber-soft); color: var(--amber); }
   .b.new { background: var(--red); color: #fff; padding: 2.5px 6px; }
+  .note { background: #fff8e8; border: 1px solid #f2e3bd; border-radius: 12px; padding: 10px 13px; font-size: 12.5px; color: #7a5a17; line-height: 1.7; margin: 10px 0 4px; }
   .title { font-size: 15.5px; font-weight: 600; line-height: 1.45; margin-bottom: 7px; }
   .title a { color: var(--ink); text-decoration: none; }
   .title a:hover { color: var(--blue); }
@@ -99,31 +102,39 @@
 
   <div class="filters">
     <div class="seg-row" id="rowSubject">
-      <button class="seg gold on" data-subject="all">全部岗位</button>
-      <button class="seg gold" data-subject="english">🎓 只看英语岗</button>
+      <button class="seg on" data-subject="all">全部机会</button>
+      <button class="seg gold" data-subject="english">🎓 英语岗</button>
+      <button class="seg" data-subject="teacher_unknown">❓ 学科未注明</button>
+      <button class="seg" data-subject="general">📋 综合公告</button>
+      <button class="seg" data-subject="process">🗂 流程公示</button>
       <span style="flex:1"></span>
       <button class="seg" data-sort="deadline">截止优先</button>
       <button class="seg" data-sort="new">最新发布</button>
     </div>
     <div class="seg-row" id="rowRegion">
-      <button class="seg on" data-region="all">全部地区</button>
-      <button class="seg" data-region="曲靖">曲靖</button>
-      <button class="seg" data-region="near">周边（昆明/昭通/黔西南）</button>
+      <button class="seg on" data-region="main">曲靖+周边</button>
+      <button class="seg" data-region="曲靖">只看曲靖</button>
+      <button class="seg" data-region="near">周边</button>
       <button class="seg" data-region="other">云南其他</button>
+      <button class="seg" data-region="all">全部地区</button>
     </div>
     <div class="seg-row" id="rowType">
       <button class="seg on" data-type="all">全部类型</button>
-      <button class="seg" data-type="事业编统考">事业编统考</button>
+      <button class="seg" data-type="事业编统考">统考</button>
       <button class="seg" data-type="人才引进">人才引进</button>
       <button class="seg" data-type="教师招聘">教师招聘</button>
       <button class="seg" data-type="特岗">特岗</button>
     </div>
   </div>
 
+  <div class="note" id="processNote" style="display:none">
+    🗂 <b>流程公示归档</b>：以下是招聘流程中的成绩公示、资格复审、体检考察通知等，<b>不能报名</b>，仅供追溯招聘进度。可以报名的机会请看上方"全部机会"等筛选。
+  </div>
+
   <div class="list" id="list"></div>
 
   <footer>
-    <b>使用说明</b>：数据每天自动抓取自曲靖市人社局、云南省人社厅、华图、山香等公开渠道，已自动过滤编外、合同制、临聘、公益性岗位等无编信息。<b>⚠️ 编制待核实</b>的岗位，报名前务必点开原文确认"纳入事业编制管理"等表述。年龄要求已从原文摘出，报名以公告原文为准。
+    <b>使用说明</b>：数据每天自动抓取自曲靖市人社局、云南省人社厅、华图、山香等公开渠道，已自动过滤编外、合同制、临聘、公益性岗位等无编信息。<b>🎓 英语岗</b>是标题或正文明确提到英语的岗位；<b>❓ 学科未注明</b>是教师招聘但全文没写学科；<b>📋 综合公告</b>是统考大类（含教师岗，具体学科需下载岗位表确认）——后两类不确定是否含英语岗，故分开标注。<b>⚠️ 编制待核实</b>的岗位，报名前务必点开原文确认"纳入事业编制管理"等表述。成绩公示、体检通知等流程信息在"🗂 流程公示"里查。
     <div class="src-list" id="srcList"></div>
     <div class="disclaim">信息仅供参考，一切以招聘单位官方公告为准 · 曲靖教师编制雷达</div>
   </footer>
@@ -132,7 +143,7 @@
 <script>
 const DATA = "__JOBS_DATA__";
 
-const state = { subject: 'all', region: 'all', type: 'all', sort: 'deadline' };
+const state = { subject: 'all', region: 'main', type: 'all', sort: 'deadline' };
 const NEAR = ['昆明', '昭通', '贵州邻近'];
 const todayStr = DATA.generated_date;
 
@@ -144,14 +155,22 @@ function daysLeft(deadline) {
 }
 
 function regionGroup(r) {
-  if (r === '曲靖') return '曲靖';
+  if (r === '曲靖') return 'qujing';
   if (NEAR.includes(r)) return 'near';
   return 'other';
 }
 
+function subjOf(j) {
+  return j.subject_class || (j.english ? 'english' : 'teacher_unknown');
+}
+
 function match(j) {
-  if (state.subject === 'english' && !j.english) return false;
-  if (state.region !== 'all' && regionGroup(j.region) !== state.region) return false;
+  if (state.subject !== 'all' && subjOf(j) !== state.subject) return false;
+  const g = regionGroup(j.region);
+  if (state.region === 'main' && g === 'other') return false;
+  if (state.region === '曲靖' && g !== 'qujing') return false;
+  if (state.region === 'near' && g !== 'near') return false;
+  if (state.region === 'other' && g !== 'other') return false;
   if (state.type !== 'all' && j.jtype !== state.type) return false;
   return true;
 }
@@ -191,6 +210,13 @@ function bianzhiBadge(j) {
     : badge('check', '⚠ 编制待核实');
 }
 
+function subjectBadge(j) {
+  const sc = subjOf(j);
+  if (sc === 'english') return badge('english', '🎓 英语岗');
+  if (sc === 'general') return badge('type2', '📋 综合公告·含教师岗');
+  return badge('unknown', '❓ 学科未注明');
+}
+
 function deadlineBar(j) {
   if (!j.deadline) {
     return `<div class="deadline dl-none"><span>⏰ 截止时间未抓到，请以公告原文为准</span><a class="go" href="${j.url}" target="_blank">查看原文 →</a></div>`;
@@ -212,8 +238,8 @@ function renderCard(j) {
   return `<div class="card ${expired ? 'expired' : ''}">
     <div class="badges">
       ${regionBadge(j)}
-      ${badge('type', j.jtype || '招聘')}
-      ${j.english ? badge('english', '🎓 英语岗') : ''}
+      ${subjectBadge(j)}
+      ${(j.jtype === '特岗' || j.jtype === '人才引进') ? badge('type', j.jtype) : ''}
       ${bianzhiBadge(j)}
       ${j.is_new ? badge('new', 'NEW') : ''}
     </div>
@@ -223,9 +249,29 @@ function renderCard(j) {
   </div>`;
 }
 
+function renderProcess() {
+  const list = DATA.process || [];
+  const el = document.getElementById('list');
+  if (!list.length) {
+    el.innerHTML = `<div class="empty"><div class="big">🗂</div>暂无流程公示记录。<br>招聘过程中的成绩公示、体检考察通知等会自动归档到这里。</div>`;
+    return;
+  }
+  el.innerHTML = list.map(p => `<div class="card">
+    <div class="badges">
+      ${regionBadge(p)}
+      ${badge('type', '流程公示')}
+      ${p.is_new ? badge('new', 'NEW') : ''}
+    </div>
+    <div class="title"><a href="${p.url}" target="_blank">${p.title}</a></div>
+    <div class="meta"><span>发布 ${p.published || ''}</span><span>来源 ${p.source || ''}</span></div>
+  </div>`).join('');
+}
+
 function render() {
   const jobs = DATA.jobs || [];
-  const allEnglish = jobs.filter(j => j.english).length;
+  const processCount = (DATA.process || []).length;
+  const isProcessView = state.subject === 'process';
+  const allEnglish = jobs.filter(j => subjOf(j) === 'english').length;
   const qujing = jobs.filter(j => j.region === '曲靖').length;
   const newToday = jobs.filter(j => j.is_new).length;
   const okSrc = DATA.sources.filter(s => s.ok).length;
@@ -233,6 +279,7 @@ function render() {
   document.getElementById('metaLine').innerHTML =
     `<span><span class="dot"></span>最近更新 ${DATA.generated_at}</span>` +
     `<span>数据源 ${okSrc}/${DATA.sources.length} 正常</span>` +
+    `<span>🗂 流程公示 ${processCount} 条</span>` +
     `<span>本次扫描 ${DATA.total_candidates} 条 · 排除 ${DATA.excluded} 条</span>`;
 
   document.getElementById('summary').innerHTML = `
@@ -247,11 +294,15 @@ function render() {
       return `<span class="src-tag ${bad ? 'bad' : ''}">${bad ? '✕' : '●'} ${name}</span>`;
     }).join('');
 
-  const filtered = sortJobs(jobs.filter(match));
   const el = document.getElementById('list');
+  document.getElementById('processNote').style.display = isProcessView ? 'block' : 'none';
+
+  if (isProcessView) { renderProcess(); return; }
+
+  const filtered = sortJobs(jobs.filter(match));
   if (!filtered.length) {
     el.innerHTML = `<div class="empty"><div class="big">📡</div>
-      当前筛选下暂无在招机会。<br>系统每天自动扫描，有新公告会第一时间出现在这里。<br>也可以放宽地区或类型筛选试试。</div>`;
+      当前筛选下暂无在招机会。<br>系统每天自动扫描，有新公告会第一时间出现在这里。<br>也可以放宽学科、地区或类型筛选试试。</div>`;
     el.style.display = 'block';
     return;
   }
