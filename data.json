@@ -1,36 +1,36 @@
 {
- "generated_at": "2026-08-30 08:39",
+ "generated_at": "2026-08-30 16:32",
  "generated_date": "2026-08-30",
  "sources": [
   {
    "name": "曲靖市人社局",
-   "ok": false,
-   "pages_ok": 0,
-   "found": 0
+   "ok": true,
+   "pages_ok": 3,
+   "found": 1
   },
   {
    "name": "曲靖市人社局",
-   "ok": false,
-   "pages_ok": 0,
-   "found": 0
+   "ok": true,
+   "pages_ok": 3,
+   "found": 7
   },
   {
    "name": "云南省人社厅",
-   "ok": false,
-   "pages_ok": 0,
-   "found": 0
+   "ok": true,
+   "pages_ok": 2,
+   "found": 2
   },
   {
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 60
+   "found": 59
   },
   {
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 67
+   "found": 66
   },
   {
    "name": "山香教育",
@@ -42,11 +42,11 @@
    "name": "山香教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 0
+   "found": 33
   }
  ],
- "total_candidates": 137,
- "excluded": 113,
+ "total_candidates": 179,
+ "excluded": 154,
  "jobs": [
   {
    "id": "fda1d211f953",
@@ -57,6 +57,7 @@
    "region_detail": "",
    "jtype": "教师招聘",
    "english": true,
+   "subject_class": "english",
    "bianzhi": "yes",
    "age": "≤35周岁",
    "headcount": 6,
@@ -74,6 +75,7 @@
    "region_detail": "",
    "jtype": "教师招聘",
    "english": true,
+   "subject_class": "english",
    "bianzhi": "yes",
    "age": "≤18周岁",
    "headcount": 10,
@@ -91,6 +93,7 @@
    "region_detail": "",
    "jtype": "教师招聘",
    "english": false,
+   "subject_class": "teacher_unknown",
    "bianzhi": "yes",
    "age": "≤18周岁",
    "headcount": 9,
@@ -108,6 +111,7 @@
    "region_detail": "",
    "jtype": "教师招聘",
    "english": true,
+   "subject_class": "english",
    "bianzhi": "yes",
    "age": "≤38周岁",
    "headcount": 3,
@@ -125,26 +129,10 @@
    "region_detail": "",
    "jtype": "教师招聘",
    "english": true,
+   "subject_class": "english",
    "bianzhi": "yes",
    "age": "≤38周岁",
    "headcount": 1,
-   "deadline": null,
-   "published": "2026-08-01",
-   "first_seen": "2026-08-29",
-   "is_new": false
-  },
-  {
-   "id": "704e2618f011",
-   "title": "昆明市第十中学教育集团2026年度最新招聘教育人才公告(12人",
-   "url": "http://yn.huatu.com/2026/0819/2006877.html",
-   "source": "华图教育",
-   "region": "昆明",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": false,
-   "bianzhi": "check",
-   "age": "",
-   "headcount": 12,
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
@@ -159,43 +147,10 @@
    "region_detail": "",
    "jtype": "教师招聘",
    "english": false,
+   "subject_class": "teacher_unknown",
    "bianzhi": "yes",
    "age": "≤38周岁",
    "headcount": 8,
-   "deadline": null,
-   "published": "2026-08-01",
-   "first_seen": "2026-08-29",
-   "is_new": false
-  },
-  {
-   "id": "0c9466e4bbf9",
-   "title": "云南技师学院招聘外包学生宿舍管理员的公告(55人)",
-   "url": "http://yn.huatu.com/2026/0811/2006083.html",
-   "source": "华图教育",
-   "region": "云南其他",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": false,
-   "bianzhi": "yes",
-   "age": "",
-   "headcount": 55,
-   "deadline": null,
-   "published": "2026-08-01",
-   "first_seen": "2026-08-29",
-   "is_new": false
-  },
-  {
-   "id": "1d7504138eb4",
-   "title": "昆明市五华区部分中小学、幼儿园教育就业见习人员招聘公告（",
-   "url": "http://yn.huatu.com/2026/0810/2005872.html",
-   "source": "华图教育",
-   "region": "昆明",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": false,
-   "bianzhi": "yes",
-   "age": "",
-   "headcount": 101,
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
@@ -210,6 +165,7 @@
    "region_detail": "",
    "jtype": "教师招聘",
    "english": true,
+   "subject_class": "english",
    "bianzhi": "yes",
    "age": "≤38周岁",
    "headcount": 14,
@@ -227,6 +183,7 @@
    "region_detail": "",
    "jtype": "教师招聘",
    "english": false,
+   "subject_class": "teacher_unknown",
    "bianzhi": "check",
    "age": "",
    "headcount": 14,
@@ -244,6 +201,7 @@
    "region_detail": "麒麟区",
    "jtype": "事业编统考",
    "english": false,
+   "subject_class": "general",
    "bianzhi": "yes",
    "age": "",
    "headcount": null,
@@ -261,6 +219,7 @@
    "region_detail": "",
    "jtype": "事业编统考",
    "english": false,
+   "subject_class": "general",
    "bianzhi": "yes",
    "age": "",
    "headcount": null,
@@ -278,6 +237,7 @@
    "region_detail": "",
    "jtype": "事业编统考",
    "english": true,
+   "subject_class": "english",
    "bianzhi": "yes",
    "age": "",
    "headcount": null,
@@ -285,40 +245,7 @@
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
    "is_new": false
-  },
-  {
-   "id": "605d3db18f66",
-   "title": "昆明市教体局直属学校2026年公开引进高层次和紧缺急需",
-   "url": "http://yn.huatu.com/2026/0724/2004224.html",
-   "source": "华图教育",
-   "region": "昆明",
-   "region_detail": "",
-   "jtype": "人才引进",
-   "english": false,
-   "bianzhi": "yes",
-   "age": "",
-   "headcount": 24,
-   "deadline": null,
-   "published": "2026-07-01",
-   "first_seen": "2026-08-29",
-   "is_new": false
-  },
-  {
-   "id": "0eeb4e1b5156",
-   "title": "2026年云南特岗笔试考后复盘",
-   "url": "http://yn.huatu.com/2026/0711/2003069.html",
-   "source": "华图教育",
-   "region": "云南其他",
-   "region_detail": "",
-   "jtype": "特岗",
-   "english": false,
-   "bianzhi": "yes",
-   "age": "",
-   "headcount": 11,
-   "deadline": null,
-   "published": "2026-07-01",
-   "first_seen": "2026-08-29",
-   "is_new": false
   }
- ]
+ ],
+ "process": []
 }
