@@ -85,6 +85,29 @@ def extract_text(html):
     return re.sub(r'\s+', ' ', text)
 
 
+def extract_real_title(html):
+    """从详情页提取完整标题（聚合站列表页标题常被截断，导致流程公示漏判）"""
+    raws = []
+    m = re.search(r'<h1[^>]*>(.*?)</h1>', html, re.S | re.I)
+    if m:
+        raws.append(m.group(1))
+    m = re.search(r'<title>(.*?)</title>', html, re.S | re.I)
+    if m:
+        raws.append(m.group(1))
+    for raw in raws:
+        t = re.sub(r'<[^>]+>', '', raw)
+        t = re.sub(r'\s+', '', t)
+        t = re.split(r'[_｜|]', t)[0]     # 去掉 "_云南华图" 类下划线后缀
+        prev = None
+        while prev != t:                  # 去掉 "-曲靖市人力资源和社会保障局" 类横线后缀
+            prev = t
+            t = SITE_SUFFIX.sub('', t)
+        t = t.strip(' -–—：:·')
+        if 10 <= len(t) <= 120:
+            return t
+    return ''
+
+
 def abs_url(href, base):
     """相对链接 -> 绝对链接"""
     if href.startswith(('http://', 'https://')):
@@ -119,13 +142,21 @@ RE_RESULT = re.compile(                                          # 结果/流程
 RE_INFO = re.compile(                                            # 资讯/问答类文章（非公告）
     r'(考什么|什么时候|怎么考|报名入口|查询时间|最新招聘信息|入面分数|分数线|多少分|'
     r'考试科目|科目有哪些|待遇|怎么样|难吗|备考|真题|答案|职位表下载|汇总$|时间安排|'
-    r'报考指南|常见问题|招聘信息$)')
+    r'报考指南|常见问题|招聘信息$|复盘|考后)')
+RE_RESULT_BODY = re.compile(                                     # 正文级"流程/结果公告"特征（短语特异，普通公告不会出现）
+    r'(拟聘（录）用人员|拟录（聘）用人员|拟聘用人员名单|拟录用人员名单|拟进入体检|'
+    r'进入体检考察环节|体检、考察结果|体检考察结果|资格复审结果|综合成绩、资格复审|取消岗位情况)')
+SITE_SUFFIX = re.compile(                                        # 详情页 <title> 里的网站名后缀
+    r'[-–—](?:曲靖市人力资源和社会保障局|云南省人力资源和社会保障厅|云南人事考试网|云南人事考试|'
+    r'云南华图教育|云南华图|华图教育|华图教师网|山香教育|高校人才网|教师招聘网|曲靖市人民政府|'
+    r'公务员考试网|事业单位招聘网)$')
+STORE_VERSION = 3   # 分析规则版本：变更后存量条目会重新抓详情页复核
 RE_TEACHER = re.compile(
     r'教师|教育|学校|学院|幼儿园|师范|教体|教学|中学|小学|职校|技工学校')
 RE_UNIT = re.compile(r'事业单位')  # 事业单位公开招聘（未必带"教师"字样，如统考公告）
 RE_NEG = re.compile(
     r'编制外|编外|合同制|劳动合同制|劳务派遣|人事代理|临聘|代课|顶岗|公益性岗位|'
-    r'非全日制|辅助人员|政府购买|购买服务|非在编|第三方|民办')
+    r'非全日制|辅助人员|政府购买|购买服务|非在编|第三方|民办|外包|见习')
 RE_POS_STRONG = re.compile(
     r'事业编制|纳入编制|编制内|使用编制|特岗计划|特岗教师|公费师范|公费师范生|'
     r'公开引进|公开招聘|人才引进|事业单位公开招聘')
@@ -337,12 +368,36 @@ def main():
 
     # 2. 逐条处理
     jobs = []
+    process = []          # 流程/结果公示：不进主列表，单独入口展示
     excluded = 0
     new_details = 0
     for url, cand in candidates.items():
         title = cand['title']
 
-        # 地区判定
+        # 存量里是否已有该 URL 的分析结果（规则版本变了就重抓复核）
+        item_id = make_id(url)
+        old = store.get(url)
+        need_detail = old is None or old.get('v') != STORE_VERSION or not old.get('analyzed')
+
+        body_text = old.get('body_text', '') if old else ''
+        raw_html = ''
+        if need_detail and new_details < MAX_NEW_DETAILS_PER_RUN:
+            try:
+                raw_html = fetch(url, timeout=20)
+                body_text = extract_text(raw_html)[:20000]
+                new_details += 1
+                time.sleep(0.4)
+            except Exception as e:
+                print('  [detail fail] %s: %s' % (title[:30], e))
+                body_text = old.get('body_text', '') if old else ''
+
+        # 详情页真实标题覆盖列表页截断标题（根治"……公示"被截断漏判的问题）
+        if raw_html:
+            real_title = extract_real_title(raw_html)
+            if real_title and len(real_title) >= len(title):
+                title = real_title
+
+        # 地区判定（用尽量完整的标题）
         if cand['force_region']:
             region, region_detail = cand['force_region'], ''
             rd = classify_region(title)
@@ -351,34 +406,49 @@ def main():
         else:
             region, region_detail = classify_region(title)
         if not region:
+            if old:
+                store[url]['status'] = 'excluded_region'
             excluded += 1
             continue
 
         # 教师/事业单位相关性（防止企业招聘、医疗卫生等混入）
         if not (RE_TEACHER.search(title) or RE_UNIT.search(title) or '特岗' in title):
+            if old:
+                store[url]['status'] = 'excluded_topic'
             excluded += 1
             continue
 
         jtype = classify_type(title)
 
-        # 存量里是否已有该 URL 的分析结果
-        item_id = make_id(url)
-        old = store.get(url)
-
-        need_detail = old is None
-        if old and not old.get('analyzed'):
-            need_detail = True
-
-        body_text = old.get('body_text', '') if old else ''
-        if need_detail and new_details < MAX_NEW_DETAILS_PER_RUN:
-            try:
-                html = fetch(url, timeout=20)
-                body_text = extract_text(html)[:20000]
-                new_details += 1
-                time.sleep(0.4)
-            except Exception as e:
-                print('  [detail fail] %s: %s' % (title[:30], e))
-                body_text = ''
+        # 流程/结果公示判定：完整标题 + 正文前段双保险
+        is_process = bool(RE_RESULT.search(title)) or bool(raw_html and RE_RESULT_BODY.search(body_text[:2000]))
+        if is_process:
+            published = old.get('published') if old else None
+            if not published:
+                m = RE_PUBLISH_GOV.search(body_text)
+                if m:
+                    try:
+                        published = datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3))).isoformat()
+                    except ValueError:
+                        published = None
+            if not published:
+                published = parse_date_from_url(url) or TODAY.isoformat()
+            process.append({
+                'title': title, 'url': url, 'source': cand['source'],
+                'region': region, 'region_detail': region_detail,
+                'published': published,
+                'first_seen': (old or {}).get('first_seen') or TODAY.isoformat(),
+            })
+            if not old:
+                store[url] = {}
+            store[url].update({
+                'title': title, 'status': 'process', 'source': cand['source'],
+                'region': region, 'region_detail': region_detail,
+                'published': published, 'analyzed': True, 'v': STORE_VERSION,
+            })
+            if body_text:
+                store[url]['body_text'] = body_text[:8000]
+            continue
 
         body_info = analyze_body(body_text)
 
@@ -388,7 +458,7 @@ def main():
         if neg:
             store[url] = {
                 'title': title, 'status': 'excluded_neg', 'source': cand['source'],
-                'analyzed': True, 'body_text': body_text[:5000],
+                'analyzed': True, 'v': STORE_VERSION, 'body_text': body_text[:5000],
                 'first_seen': (old or {}).get('first_seen', TODAY.isoformat()),
             }
             excluded += 1
@@ -398,11 +468,12 @@ def main():
         store[url].update({
             'title': title, 'status': 'included', 'source': cand['source'],
             'region': region, 'region_detail': region_detail, 'jtype': jtype,
-            'analyzed': bool(body_text),
+            'analyzed': bool(body_text), 'v': STORE_VERSION,
         })
 
         bianzhi = 'yes' if pos else 'check'
         english = bool(RE_ENGLISH.search(title)) or body_info['english']
+        subject_class = 'english' if english else ('general' if jtype == '事业编统考' else 'teacher_unknown')
         headcount = None
         m = RE_HEADCOUNT.search(title)
         if m:
@@ -437,6 +508,7 @@ def main():
             'region_detail': region_detail,
             'jtype': jtype,
             'english': english,
+            'subject_class': subject_class,
             'bianzhi': bianzhi,
             'age': body_info['age'],
             'headcount': headcount,
@@ -452,12 +524,29 @@ def main():
 
     # 3. 合并存量中之前收录、本次列表里没出现的机会（可能还在报名期内），60天前的一律清理
     seen_urls = {j['url'] for j in jobs}
+    process_urls = {p['url'] for p in process}
     cutoff = (TODAY - datetime.timedelta(days=60)).isoformat()
     stale = []
     for url, old in store.items():
-        if old.get('status') != 'included' or url in seen_urls:
+        if url in seen_urls or url in process_urls:
             continue
         t = old.get('title', '')
+
+        # 流程公示：保留近60天的，供独立入口查看
+        if old.get('status') == 'process':
+            if (old.get('published') or old.get('first_seen', '')) < cutoff:
+                stale.append(url)
+                continue
+            process.append({
+                'title': t, 'url': url, 'source': old.get('source', ''),
+                'region': old.get('region', ''), 'region_detail': old.get('region_detail', ''),
+                'published': old.get('published') or old.get('first_seen', TODAY.isoformat()),
+                'first_seen': old.get('first_seen', TODAY.isoformat()),
+            })
+            continue
+
+        if old.get('status') != 'included':
+            continue
         if RE_RESULT.search(t) or RE_INFO.search(t):
             stale.append(url)
             continue
@@ -468,11 +557,16 @@ def main():
         if dl and datetime.date.fromisoformat(dl) <= TODAY - datetime.timedelta(days=1):
             stale.append(url)
             continue
+        sc = old.get('subject_class')
+        if not sc:
+            sc = 'english' if (old.get('english') or RE_ENGLISH.search(t)) \
+                else ('general' if old.get('jtype') == '事业编统考' else 'teacher_unknown')
         jobs.append({
             'id': make_id(url), 'title': t, 'url': url,
             'source': old.get('source', ''), 'region': old.get('region', ''),
             'region_detail': old.get('region_detail', ''), 'jtype': old.get('jtype', ''),
             'english': old.get('english', bool(RE_ENGLISH.search(t))),
+            'subject_class': sc,
             'bianzhi': old.get('bianzhi', 'check'),
             'age': old.get('age', ''), 'headcount': old.get('headcount'),
             'deadline': dl,
@@ -491,6 +585,10 @@ def main():
         elif j['url'] in store:
             store[j['url']]['status'] = 'expired'
     jobs = kept
+
+    # 流程公示：按发布时间倒序，最多保留 80 条
+    process.sort(key=lambda p: p.get('published') or '', reverse=True)
+    process = process[:80]
 
     # 4. 排序：报名未截止的按截止日期升序在最前，其余按发布时间倒序
     def to_ord(s):
@@ -519,6 +617,7 @@ def main():
         'total_candidates': len(candidates),
         'excluded': excluded,
         'jobs': jobs,
+        'process': process,
     }
 
     with open(DATA_FILE, 'w', encoding='utf-8') as f:
@@ -535,11 +634,11 @@ def main():
             f.write(html_out)
 
     print('---')
-    print('收录 %d 条（曲靖 %d / 英语岗 %d），排除 %d 条，新抓详情 %d 页'
+    print('收录 %d 条（曲靖 %d / 英语岗 %d），流程公示 %d 条，排除 %d 条，新抓详情 %d 页'
           % (len(jobs),
              sum(1 for j in jobs if j['region'] == '曲靖'),
              sum(1 for j in jobs if j['english']),
-             excluded, new_details))
+             len(process), excluded, new_details))
     print('=== 完成，已生成 data.json / index.html ===')
 
 
