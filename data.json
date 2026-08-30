@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-08-29 17:00",
- "generated_date": "2026-08-29",
+ "generated_at": "2026-08-30 00:36",
+ "generated_date": "2026-08-30",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -46,7 +46,7 @@
   }
  ],
  "total_candidates": 137,
- "excluded": 109,
+ "excluded": 113,
  "jobs": [
   {
    "id": "fda1d211f953",
@@ -63,7 +63,7 @@
    "deadline": "2026-08-31",
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "bf268dbec13e",
@@ -80,7 +80,7 @@
    "deadline": "2026-09-02",
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "7048e137697f",
@@ -97,7 +97,7 @@
    "deadline": "2027-07-01",
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "5b6850f9a8d1",
@@ -114,7 +114,7 @@
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "3bedb4756d16",
@@ -131,7 +131,24 @@
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
+  },
+  {
+   "id": "704e2618f011",
+   "title": "昆明市第十中学教育集团2026年度最新招聘教育人才公告(12人",
+   "url": "http://yn.huatu.com/2026/0819/2006877.html",
+   "source": "华图教育",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "bianzhi": "check",
+   "age": "",
+   "headcount": 12,
+   "deadline": null,
+   "published": "2026-08-01",
+   "first_seen": "2026-08-29",
+   "is_new": false
   },
   {
    "id": "e6447b9ade01",
@@ -148,7 +165,7 @@
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "0c9466e4bbf9",
@@ -165,7 +182,7 @@
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "1d7504138eb4",
@@ -182,7 +199,7 @@
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "fd0d64754ccd",
@@ -199,7 +216,24 @@
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
+  },
+  {
+   "id": "eace6b9ac49a",
+   "title": "2026年昆明市盘龙区财大附中招聘聘用制教师（14人）",
+   "url": "http://yn.huatu.com/2026/0807/2005796.html",
+   "source": "华图教育",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "bianzhi": "check",
+   "age": "",
+   "headcount": 14,
+   "deadline": null,
+   "published": "2026-08-01",
+   "first_seen": "2026-08-29",
+   "is_new": false
   },
   {
    "id": "65a499489014",
@@ -216,7 +250,7 @@
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "92ed5b090a36",
@@ -233,7 +267,7 @@
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "d395605be4c8",
@@ -250,7 +284,7 @@
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "605d3db18f66",
@@ -267,7 +301,7 @@
    "deadline": null,
    "published": "2026-07-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "0eeb4e1b5156",
@@ -284,7 +318,7 @@
    "deadline": null,
    "published": "2026-07-01",
    "first_seen": "2026-08-29",
-   "is_new": true
+   "is_new": false
   }
  ]
 }
