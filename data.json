@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-01 04:45",
+ "generated_at": "2026-09-01 08:46",
  "generated_date": "2026-09-01",
  "sources": [
   {
@@ -24,7 +24,7 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 60
+   "found": 62
   },
   {
    "name": "华图教育",
@@ -45,7 +45,7 @@
    "found": 0
   }
  ],
- "total_candidates": 134,
+ "total_candidates": 136,
  "excluded": 114,
  "jobs": [
   {
@@ -121,6 +121,24 @@
    "is_new": false
   },
   {
+   "id": "704e2618f011",
+   "title": "昆明市第十中学教育集团2026年度最新招聘教育人才公告(12人",
+   "url": "http://yn.huatu.com/2026/0819/2006877.html",
+   "source": "华图教育",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "check",
+   "age": "",
+   "headcount": 12,
+   "deadline": null,
+   "published": "2026-08-01",
+   "first_seen": "2026-08-29",
+   "is_new": false
+  },
+  {
    "id": "e6447b9ade01",
    "title": "昆明高新一小教育集团2026年小学教师招聘公告（8人）",
    "url": "http://yn.huatu.com/2026/0812/2006282.html",
@@ -150,24 +168,6 @@
    "subject_class": "english",
    "bianzhi": "yes",
    "age": "≤38周岁",
-   "headcount": 14,
-   "deadline": null,
-   "published": "2026-08-01",
-   "first_seen": "2026-08-29",
-   "is_new": false
-  },
-  {
-   "id": "eace6b9ac49a",
-   "title": "2026年昆明市盘龙区财大附中招聘聘用制教师（14人）",
-   "url": "http://yn.huatu.com/2026/0807/2005796.html",
-   "source": "华图教育",
-   "region": "昆明",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": false,
-   "subject_class": "teacher_unknown",
-   "bianzhi": "check",
-   "age": "",
    "headcount": 14,
    "deadline": null,
    "published": "2026-08-01",
@@ -229,5 +229,15 @@
    "is_new": false
   }
  ],
- "process": []
+ "process": [
+  {
+   "title": "会泽县教育体育局关于2026年公开招聘国家公费师范毕业生资格复审、体检、考察情况及拟录（聘）用人员名单公示",
+   "url": "http://yn.huatu.com/2026/0901/2008053.html",
+   "source": "华图教育",
+   "region": "曲靖",
+   "region_detail": "会泽县",
+   "published": "2026-09-01",
+   "first_seen": "2026-09-01"
+  }
+ ]
 }
