@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-09 08:45",
- "generated_date": "2026-09-09",
+ "generated_at": "2026-09-10 00:45",
+ "generated_date": "2026-09-10",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -46,7 +46,7 @@
   }
  ],
  "total_candidates": 137,
- "excluded": 117,
+ "excluded": 116,
  "jobs": [
   {
    "id": "25a835701225",
@@ -265,6 +265,24 @@
    "is_new": false
   },
   {
+   "id": "fe25ab1fd520",
+   "title": "云南师范大学附属盘龙中学公开招聘2027届公费师范生公告(9人",
+   "url": "http://yn.huatu.com/2026/0909/2008788.html",
+   "source": "华图教育",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": 9,
+   "deadline": null,
+   "published": "2026-09-01",
+   "first_seen": "2026-09-09",
+   "is_new": false
+  },
+  {
    "id": "5b6850f9a8d1",
    "title": "昆明市高新区2026年最新招聘教育工作人员公告(3人）",
    "url": "http://yn.huatu.com/2026/0824/2007214.html",
@@ -295,24 +313,6 @@
    "bianzhi": "yes",
    "age": "≤38周岁",
    "headcount": 1,
-   "deadline": null,
-   "published": "2026-08-01",
-   "first_seen": "2026-08-29",
-   "is_new": false
-  },
-  {
-   "id": "704e2618f011",
-   "title": "昆明市第十中学教育集团2026年度最新招聘教育人才公告(12人",
-   "url": "http://yn.huatu.com/2026/0819/2006877.html",
-   "source": "华图教育",
-   "region": "昆明",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": false,
-   "subject_class": "teacher_unknown",
-   "bianzhi": "check",
-   "age": "",
-   "headcount": 12,
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
