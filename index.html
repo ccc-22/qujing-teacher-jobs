@@ -48,6 +48,12 @@
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 13px 14px; margin-bottom: 10px; transition: box-shadow .15s; }
   .card:hover { box-shadow: 0 4px 16px rgba(30,63,174,.09); }
   .card.expired { opacity: .55; }
+  .card.read { opacity: .55; }
+  .card.fav { opacity: 1; border-color: #f5b301; background: #fffdf2; box-shadow: 0 0 0 1px #f5b301, 0 2px 10px rgba(245,179,1,.18); }
+  .card.fav .title a { color: var(--ink); }
+  .card.read .title a { color: var(--ink2); }
+  .card.read .badges .b.new { display: none; }
+  .unread-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--red); margin-right: 6px; flex-shrink: 0; box-shadow: 0 0 0 2px #fff; }
   .badges { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 7px; align-items: center; }
   .b { font-size: 11px; padding: 2.5px 8px; border-radius: 6px; font-weight: 600; white-space: nowrap; }
   .b.region-main { background: var(--blue); color: #fff; }
@@ -72,6 +78,13 @@
   .dl-none { background: var(--amber-soft); color: var(--amber); }
   .dl-passed { background: var(--gray-soft); color: var(--ink2); font-weight: 400; }
   .go { font-size: 12.5px; font-weight: 600; color: var(--blue); white-space: nowrap; text-decoration: none; }
+  .mark-read { font-size: 12px; color: var(--ink2); background: none; border: 1px solid var(--line); border-radius: 999px; padding: 2px 11px; cursor: pointer; margin-top: 8px; }
+  .mark-read:hover { color: var(--blue); border-color: var(--blue); }
+  .mark-fav { font-size: 12px; color: var(--ink2); background: none; border: 1px solid var(--line); border-radius: 999px; padding: 2px 11px; cursor: pointer; margin-top: 8px; margin-left: 6px; }
+  .mark-fav:hover { color: #d97706; border-color: #f5b301; }
+  .mark-fav.on { color: #b45309; border-color: #f5b301; background: #fef3c7; font-weight: 600; }
+  .card-ops { display: flex; align-items: center; }
+  .tab-badge { display: none; min-width: 16px; height: 16px; padding: 0 4px; margin-left: 5px; border-radius: 999px; background: var(--red); color: #fff; font-size: 11px; font-weight: 700; line-height: 16px; text-align: center; vertical-align: 1px; }
   .go:hover { text-decoration: underline; }
 
   .empty { text-align: center; padding: 60px 20px; color: var(--ink2); font-size: 14px; line-height: 2; }
@@ -100,24 +113,31 @@
 <div class="wrap">
   <div class="summary" id="summary"></div>
 
+  <div class="seg-row" id="actionRow" style="display:none; margin-bottom:8px;">
+    <span class="seg" id="unreadCount" style="cursor:default; background:#fff3e0; color:#d97706; border-color:#ffcc80;"></span>
+    <button class="seg" id="markAllRead">✓ 全部标记已读</button>
+    <button class="seg" id="resetRead" style="color:var(--ink2)">清除已读记录</button>
+  </div>
+
   <div class="filters">
     <div class="seg-row" id="rowSubject">
-      <button class="seg on" data-subject="all">全部机会</button>
-      <button class="seg gold" data-subject="english">🎓 英语岗</button>
-      <button class="seg" data-subject="teacher_unknown">❓ 学科未注明</button>
-      <button class="seg" data-subject="general">📋 综合公告</button>
-      <button class="seg" data-subject="process">🗂 流程公示</button>
-      <span style="flex:1"></span>
-      <button class="seg" data-sort="deadline">截止优先</button>
-      <button class="seg" data-sort="new">最新发布</button>
-    </div>
+	      <button class="seg on" data-subject="all">全部机会</button>
+	      <button class="seg gold" data-subject="english_clear">🎓 英语明确</button>
+	      <button class="seg" data-subject="english_maybe">🔍 可能含英语</button>
+	      <button class="seg" data-subject="teacher_unknown">❓ 学科未注明</button>
+	      <button class="seg" data-subject="general">📋 综合公告</button>
+	      <button class="seg" data-subject="process">🗂 流程公示<span class="tab-badge" id="procBadge"></span></button>
+	      <span style="flex:1"></span>
+	      <button class="seg" data-sort="deadline">截止优先</button>
+	      <button class="seg" data-sort="new">最新发布</button>
+	    </div>
     <div class="seg-row" id="rowRegion">
-      <button class="seg on" data-region="main">曲靖+周边</button>
-      <button class="seg" data-region="曲靖">只看曲靖</button>
-      <button class="seg" data-region="near">周边</button>
-      <button class="seg" data-region="other">云南其他</button>
-      <button class="seg" data-region="all">全部地区</button>
-    </div>
+	      <button class="seg" data-region="main">曲靖+周边</button>
+	      <button class="seg" data-region="曲靖">只看曲靖</button>
+	      <button class="seg" data-region="near">周边</button>
+	      <button class="seg" data-region="other">云南其他</button>
+	      <button class="seg on" data-region="all">全部地区</button>
+	    </div>
     <div class="seg-row" id="rowType">
       <button class="seg on" data-type="all">全部类型</button>
       <button class="seg" data-type="事业编统考">统考</button>
@@ -134,18 +154,77 @@
   <div class="list" id="list"></div>
 
   <footer>
-    <b>使用说明</b>：数据每天自动抓取自曲靖市人社局、云南省人社厅、华图、山香等公开渠道，已自动过滤编外、合同制、临聘、公益性岗位等无编信息。<b>🎓 英语岗</b>是标题或正文明确提到英语的岗位；<b>❓ 学科未注明</b>是教师招聘但全文没写学科；<b>📋 综合公告</b>是统考大类（含教师岗，具体学科需下载岗位表确认）——后两类不确定是否含英语岗，故分开标注。<b>⚠️ 编制待核实</b>的岗位，报名前务必点开原文确认"纳入事业编制管理"等表述。成绩公示、体检通知等流程信息在"🗂 流程公示"里查。
+    <b>使用说明</b>：数据每天自动抓取自曲靖市人社局、云南省人社厅、华图、山香等公开渠道，已自动过滤编外、合同制、临聘、公益性岗位等无编信息。<b>🎓 英语明确</b>是标题或正文明确提到英语的岗位；<b>🔍 可能含英语</b>是正文提到英语但标题未注明的岗位；<b>❓ 学科未注明</b>是教师招聘但全文没写学科；<b>📋 综合公告</b>是统考大类（含教师岗，具体学科需下载岗位表确认）。已自动排除研究生-only、应届生-only、选调生等不匹配的岗位。<b>⚠️ 编制待核实</b>的岗位，报名前务必点开原文确认"纳入事业编制管理"等表述。成绩公示、体检通知等流程信息在"🗂 流程公示"里查。
     <div class="src-list" id="srcList"></div>
     <div class="disclaim">信息仅供参考，一切以招聘单位官方公告为准 · 曲靖教师编制雷达</div>
   </footer>
 </div>
 
 <script>
-const DATA = {"generated_at": "2026-09-13 04:44", "generated_date": "2026-09-13", "sources": [{"name": "曲靖市人社局", "ok": false, "pages_ok": 0, "found": 0}, {"name": "曲靖市人社局", "ok": false, "pages_ok": 0, "found": 0}, {"name": "云南省人社厅", "ok": false, "pages_ok": 0, "found": 0}, {"name": "华图教育", "ok": true, "pages_ok": 1, "found": 62}, {"name": "华图教育", "ok": true, "pages_ok": 1, "found": 64}, {"name": "山香教育", "ok": true, "pages_ok": 1, "found": 19}, {"name": "山香教育", "ok": true, "pages_ok": 1, "found": 0}], "total_candidates": 136, "excluded": 115, "jobs": [{"id": "7c5d43930eaf", "title": "2026年下半年云南省交通运输厅所属事业单位公开招聘高层次和急需紧缺专业技术人才...", "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65843&ClassID=602", "source": "云南省人社厅", "region": "云南其他", "region_detail": "", "jtype": "事业编统考", "english": false, "subject_class": "general", "bianzhi": "yes", "age": "≤18周岁", "headcount": null, "deadline": "2026-12-31", "published": "2026-09-03", "first_seen": "2026-09-03", "is_new": false}, {"id": "7048e137697f", "title": "云南师范大学实验中学公开招聘2027届公费师范生公告", "url": "http://yn.huatu.com/2026/0824/2007224.html", "source": "华图教育", "region": "昆明", "region_detail": "", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "yes", "age": "≤18周岁", "headcount": 9, "deadline": "2027-07-01", "published": "2026-08-01", "first_seen": "2026-08-29", "is_new": false}, {"id": "fe25ab1fd520", "title": "云南师范大学附属盘龙中学公开招聘2027届公", "url": "http://yn.huatu.com/2026/0909/2008788.html", "source": "华图教育", "region": "昆明", "region_detail": "", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "yes", "age": "", "headcount": 9, "deadline": null, "published": "2026-09-01", "first_seen": "2026-09-09", "is_new": false}, {"id": "850fc3cd0f52", "title": "曲靖市沾益区教育体育局2026年公开招聘教育", "url": "http://yn.huatu.com/2026/0911/2008975.html", "source": "华图教育", "region": "曲靖", "region_detail": "沾益区", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "yes", "age": "", "headcount": 1, "deadline": null, "published": "2026-09-01", "first_seen": "2026-09-13", "is_new": true}, {"id": "5b6850f9a8d1", "title": "昆明市高新区2026年最新招聘教育工作人员公告(3人）", "url": "http://yn.huatu.com/2026/0824/2007214.html", "source": "华图教育", "region": "昆明", "region_detail": "", "jtype": "教师招聘", "english": true, "subject_class": "english", "bianzhi": "yes", "age": "≤38周岁", "headcount": 3, "deadline": null, "published": "2026-08-01", "first_seen": "2026-08-29", "is_new": false}, {"id": "3bedb4756d16", "title": "昆明市高新区2026年度新一轮招聘教育工作人员1人", "url": "http://yn.huatu.com/2026/0819/2006886.html", "source": "华图教育", "region": "昆明", "region_detail": "", "jtype": "教师招聘", "english": true, "subject_class": "english", "bianzhi": "yes", "age": "≤38周岁", "headcount": 1, "deadline": null, "published": "2026-08-01", "first_seen": "2026-08-29", "is_new": false}, {"id": "e6447b9ade01", "title": "昆明高新一小教育集团2026年小学教师招聘公告（8人）", "url": "http://yn.huatu.com/2026/0812/2006282.html", "source": "华图教育", "region": "昆明", "region_detail": "", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "yes", "age": "≤38周岁", "headcount": 8, "deadline": null, "published": "2026-08-01", "first_seen": "2026-08-29", "is_new": false}, {"id": "fd0d64754ccd", "title": "2026年昆明市五华区公办小学教育工作人员招聘公告（14人）", "url": "http://yn.huatu.com/2026/0810/2005863.html", "source": "华图教育", "region": "昆明", "region_detail": "", "jtype": "教师招聘", "english": true, "subject_class": "english", "bianzhi": "yes", "age": "≤38周岁", "headcount": 14, "deadline": null, "published": "2026-08-01", "first_seen": "2026-08-29", "is_new": false}, {"id": "eace6b9ac49a", "title": "2026年昆明市盘龙区财大附中招聘聘用制教师（14人）", "url": "http://yn.huatu.com/2026/0807/2005796.html", "source": "华图教育", "region": "昆明", "region_detail": "", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "check", "age": "", "headcount": 14, "deadline": null, "published": "2026-08-01", "first_seen": "2026-08-29", "is_new": false}, {"id": "65a499489014", "title": "2026年曲靖市麒麟区教体局所属事业单位招聘", "url": "http://yn.huatu.com/2026/0810/2005850.html", "source": "华图教育", "region": "曲靖", "region_detail": "麒麟区", "jtype": "事业编统考", "english": false, "subject_class": "general", "bianzhi": "yes", "age": "", "headcount": null, "deadline": null, "published": "2026-08-01", "first_seen": "2026-08-29", "is_new": false}, {"id": "92ed5b090a36", "title": "昆明官渡区教体系统2026年事业单位公开招聘", "url": "http://yn.huatu.com/2026/0808/2005830.html", "source": "华图教育", "region": "昆明", "region_detail": "", "jtype": "事业编统考", "english": false, "subject_class": "general", "bianzhi": "yes", "age": "", "headcount": null, "deadline": null, "published": "2026-08-01", "first_seen": "2026-08-29", "is_new": false}, {"id": "d395605be4c8", "title": "昆明盘龙区教体系统2026年事业单位公开招聘", "url": "http://yn.huatu.com/2026/0808/2005828.html", "source": "华图教育", "region": "昆明", "region_detail": "", "jtype": "事业编统考", "english": true, "subject_class": "english", "bianzhi": "yes", "age": "", "headcount": null, "deadline": null, "published": "2026-08-01", "first_seen": "2026-08-29", "is_new": false}], "process": []};
+const DATA = {"generated_at": "2026-09-13 14:01", "generated_date": "2026-09-13", "sources": [{"name": "曲靖市人社局", "ok": false, "pages_ok": 0, "found": 0}, {"name": "曲靖市人社局", "ok": false, "pages_ok": 0, "found": 0}, {"name": "云南省人社厅", "ok": false, "pages_ok": 0, "found": 0}, {"name": "华图教育", "ok": true, "pages_ok": 1, "found": 59}, {"name": "华图教育", "ok": true, "pages_ok": 1, "found": 64}, {"name": "山香教育", "ok": true, "pages_ok": 1, "found": 19}, {"name": "山香教育", "ok": true, "pages_ok": 1, "found": 0}, {"name": "贵州华图", "ok": true, "pages_ok": 1, "found": 26}, {"name": "贵州华图", "ok": true, "pages_ok": 1, "found": 26}, {"name": "红河人才网", "ok": false, "pages_ok": 0, "found": 0}, {"name": "贵州人社厅", "ok": false, "pages_ok": 0, "found": 0}, {"name": "云南华图", "ok": true, "pages_ok": 1, "found": 37}, {"name": "云南中公教育", "ok": false, "pages_ok": 0, "found": 0}, {"name": "华图教师云南", "ok": true, "pages_ok": 1, "found": 40}], "total_candidates": 236, "excluded": 205, "jobs": [{"id": "86b83cb3531a", "title": "2026毕节纳雍县面向社会公开招聘教师简章（22人）2026-08-1117:12[考试公告]", "url": "https://m.gz.huatu.com/2026/0811/2033991.html", "origin_url": "https://www.gznayong.gov.cn/xwdt/tzgg/202608/t20260811_90722733.html", "source": "贵州华图", "region": "贵州其他", "region_detail": "", "jtype": "教师招聘", "english": true, "subject_class": "english_clear", "bianzhi": "yes", "age": "≤18周岁", "headcount": 22, "deadline": "2026-12-31", "published": "2026-08-01", "first_seen": "2026-09-13", "is_new": true}, {"id": "7c5d43930eaf", "title": "2026年下半年云南省交通运输厅所属事业单位公开招聘高层次和急需紧缺专业技术人才...", "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65843&ClassID=602", "origin_url": "", "source": "云南省人社厅", "region": "云南其他", "region_detail": "", "jtype": "事业编统考", "english": false, "subject_class": "general", "bianzhi": "yes", "age": "≤18周岁", "headcount": null, "deadline": "2026-12-31", "published": "2026-09-03", "first_seen": "2026-09-03", "is_new": false}, {"id": "62a7275e8dce", "title": "2026年下半年云南轻纺职业学院公开招聘教师公告（9名）2026-09-0215:28:06187人", "url": "https://m.huatu.com/jiaoshi/2026/0902/2872262.html", "origin_url": "https://www.ynqfzyxy.cn/", "source": "华图教师云南", "region": "云南其他", "region_detail": "", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "yes", "age": "", "headcount": 6187, "deadline": null, "published": "2026-09-01", "first_seen": "2026-09-13", "is_new": true}, {"id": "5142d0462250", "title": "2026年下半年云南民族大学附属中学公开招聘教师公告（3名）2026-09-0215:23:37170人", "url": "https://m.huatu.com/jiaoshi/2026/0902/2872259.html", "origin_url": "", "source": "华图教师云南", "region": "云南其他", "region_detail": "", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "yes", "age": "", "headcount": 7170, "deadline": null, "published": "2026-09-01", "first_seen": "2026-09-13", "is_new": true}, {"id": "e08b8073a4c6", "title": "云南省2026年下半年事业单位D类招聘工作人员公告汇总（教师岗）2026-09-0111:42:2599人", "url": "https://m.huatu.com/jiaoshi/2026/0901/2872142.html", "origin_url": "", "source": "华图教师云南", "region": "云南其他", "region_detail": "", "jtype": "事业编统考", "english": false, "subject_class": "general", "bianzhi": "check", "age": "", "headcount": 2599, "deadline": null, "published": "2026-09-01", "first_seen": "2026-09-13", "is_new": true}, {"id": "24d470138650", "title": "2026年下半年云南民族中学公开招聘工作人员2名公告2026-09-0111:41:10159人", "url": "https://m.huatu.com/jiaoshi/2026/0901/2872141.html", "origin_url": "", "source": "华图教师云南", "region": "云南其他", "region_detail": "", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "yes", "age": "", "headcount": 159, "deadline": null, "published": "2026-09-01", "first_seen": "2026-09-13", "is_new": true}, {"id": "e681d523e920", "title": "2026年下半年云南民族大学附属中学公开招聘人员3名公告2026-09-0111:34:53180人", "url": "https://m.huatu.com/jiaoshi/2026/0901/2872140.html", "origin_url": "", "source": "华图教师云南", "region": "云南其他", "region_detail": "", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "yes", "age": "", "headcount": 3180, "deadline": null, "published": "2026-09-01", "first_seen": "2026-09-13", "is_new": true}, {"id": "53db7abe4a71", "title": "云南文山三鑫职业技术学院2026年秋季学期招聘公告(35人）2026-08-3111:00[招聘公告]", "url": "https://m.yn.huatu.com/2026/0831/2007984.html", "origin_url": "https://mp.weixin.qq.com/s/wY9z1DR0gRUzGkuq4nruDg", "source": "云南华图", "region": "文山", "region_detail": "", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "check", "age": "", "headcount": null, "deadline": null, "published": "2026-08-01", "first_seen": "2026-09-13", "is_new": true}, {"id": "5096695b7d26", "title": "昆明市高新区2026年最新招聘教育工作人员公告(3人）2026-08-2415:57[招聘公告]", "url": "https://m.yn.huatu.com/2026/0824/2007214.html", "origin_url": "https://mp.weixin.qq.com/s/pixtRKryWISSfX_h51GEng", "source": "云南华图", "region": "昆明", "region_detail": "", "jtype": "教师招聘", "english": true, "subject_class": "english_maybe", "bianzhi": "check", "age": "≤38周岁", "headcount": 3, "deadline": null, "published": "2026-08-01", "first_seen": "2026-09-13", "is_new": true}, {"id": "b9c5105dec03", "title": "云南华清中学2026年招聘公告(20人)", "url": "http://yn.huatu.com/2026/0811/2006076.html", "origin_url": "https://mp.weixin.qq.com/s/Ya0WusmR0UBve7URv_b6BQ", "source": "华图教育", "region": "云南其他", "region_detail": "", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "yes", "age": "", "headcount": 20, "deadline": null, "published": "2026-08-01", "first_seen": "2026-08-29", "is_new": false}, {"id": "660a1aa63657", "title": "2026中共云南省委党校（云南行政学院）招聘20名公告2026-08-1711:05:2981人", "url": "https://m.huatu.com/jiaoshi/2026/0817/2870713.html", "origin_url": "", "source": "华图教师云南", "region": "云南其他", "region_detail": "", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "check", "age": "", "headcount": 2981, "deadline": null, "published": "2026-08-01", "first_seen": "2026-09-13", "is_new": true}, {"id": "74b6044f89e8", "title": "2026秋季云南昆明市卫生学校学期招聘15名公告2026-08-1711:01:54199人", "url": "https://m.huatu.com/jiaoshi/2026/0817/2870711.html", "origin_url": "", "source": "华图教师云南", "region": "昆明", "region_detail": "", "jtype": "教师招聘", "english": false, "subject_class": "teacher_unknown", "bianzhi": "check", "age": "", "headcount": 4199, "deadline": null, "published": "2026-08-01", "first_seen": "2026-09-13", "is_new": true}, {"id": "fd0d64754ccd", "title": "2026年昆明市五华区公办小学教育工作人员招聘公告（14人）", "url": "http://yn.huatu.com/2026/0810/2005863.html", "origin_url": "https://mp.weixin.qq.com/s/pnoA1o07aokpy7Q_0-hQeg", "source": "华图教育", "region": "昆明", "region_detail": "", "jtype": "教师招聘", "english": true, "subject_class": "english_maybe", "bianzhi": "yes", "age": "≤38周岁", "headcount": 14, "deadline": null, "published": "2026-08-01", "first_seen": "2026-08-29", "is_new": false}], "process": [{"title": "曲靖市沾益区教育体育局2026年公开招聘教育", "url": "http://yn.huatu.com/2026/0911/2008975.html", "source": "华图教育", "region": "曲靖", "region_detail": "沾益区", "published": "2026-09-01", "first_seen": "2026-09-13"}, {"title": "昆明石林彝族自治县教育体育局编外聘用人员招聘公告(8人)2026-08-2509:02[招聘公告]", "url": "https://m.yn.huatu.com/2026/0825/2007289.html", "source": "云南华图", "region": "昆明", "region_detail": "", "published": "2026-08-01", "first_seen": "2026-09-13"}, {"title": "2026年曲靖市麒麟区教体局所属事业单位招聘", "url": "http://yn.huatu.com/2026/0810/2005850.html", "source": "华图教育", "region": "曲靖", "region_detail": "麒麟区", "published": "2026-08-01", "first_seen": "2026-08-29"}, {"title": "昆明官渡区教体系统2026年事业单位公开招聘", "url": "http://yn.huatu.com/2026/0808/2005830.html", "source": "华图教育", "region": "昆明", "region_detail": "", "published": "2026-08-01", "first_seen": "2026-08-29"}, {"title": "昆明盘龙区教体系统2026年事业单位公开招聘", "url": "http://yn.huatu.com/2026/0808/2005828.html", "source": "华图教育", "region": "昆明", "region_detail": "", "published": "2026-08-01", "first_seen": "2026-08-29"}, {"title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告", "url": "http://yn.huatu.com/2025/0704/1959074.html", "source": "华图教育", "region": "云南其他", "region_detail": "", "published": "2025-07-01", "first_seen": "2026-08-29"}]};
 
-const state = { subject: 'all', region: 'main', type: 'all', sort: 'deadline' };
-const NEAR = ['昆明', '昭通', '贵州邻近'];
+const LS_READ_KEY = 'qujing_read_ids';
+const LS_READ_DATE_KEY = 'qujing_read_date';
+
+const state = { subject: 'all', region: 'all', type: 'all', sort: 'deadline' };
+	const NEAR = ['昆明', '昭通', '玉溪', '红河', '文山', '贵州邻近'];
 const todayStr = DATA.generated_date;
+
+// ============================================================
+// 已读状态管理
+// ============================================================
+function loadReadIds() {
+  try {
+    const raw = localStorage.getItem(LS_READ_KEY);
+    if (!raw) return new Set();
+    return new Set(JSON.parse(raw));
+  } catch (e) { return new Set(); }
+}
+function saveReadIds(set) {
+  try { localStorage.setItem(LS_READ_KEY, JSON.stringify([...set])); } catch(e) {}
+}
+let readIds = loadReadIds();
+
+function markRead(id) {
+  if (!id || readIds.has(id)) return;
+  readIds.add(id);
+  saveReadIds(readIds);
+}
+
+function markAllRead(ids) {
+  ids.forEach(id => readIds.add(id));
+  saveReadIds(readIds);
+}
+
+function resetRead() {
+  readIds = new Set();
+  saveReadIds(readIds);
+}
+
+// ============================================================
+// 收藏状态管理
+// ============================================================
+const LS_FAV_KEY = 'qujing_fav_ids';
+function loadFavIds() {
+  try {
+    const raw = localStorage.getItem(LS_FAV_KEY);
+    if (!raw) return new Set();
+    return new Set(JSON.parse(raw));
+  } catch (e) { return new Set(); }
+}
+let favIds = loadFavIds();
+
+function toggleFav(id) {
+  if (!id) return;
+  if (favIds.has(id)) {
+    favIds.delete(id);
+  } else {
+    favIds.add(id);
+    readIds.delete(id);  // 收藏时恢复未读高亮，让红点和金色框同时起作用
+    saveReadIds(readIds);
+  }
+  try { localStorage.setItem(LS_FAV_KEY, JSON.stringify([...favIds])); } catch(e) {}
+}
 
 function fmtDate(s) { return s ? s.slice(5).replace('-', '月') + '日' : ''; }
 
@@ -161,8 +240,8 @@ function regionGroup(r) {
 }
 
 function subjOf(j) {
-  return j.subject_class || (j.english ? 'english' : 'teacher_unknown');
-}
+	  return j.subject_class || 'teacher_unknown';
+	}
 
 function match(j) {
   if (state.subject !== 'all' && subjOf(j) !== state.subject) return false;
@@ -175,34 +254,49 @@ function match(j) {
   return true;
 }
 
-function sortJobs(arr) {
-  const a = arr.slice();
-  if (state.sort === 'new') {
-    a.sort((x, y) => (y.published || '').localeCompare(x.published || ''));
-  } else {
-    const w = j => {
-      if (!j.deadline) return 2;
-      const dl = daysLeft(j.deadline);
-      return dl < 0 ? 3 : 0;
-    };
-    a.sort((x, y) => {
-      const wx = w(x), wy = w(y);
-      if (wx !== wy) return wx - wy;
-      if (wx === 0) return (x.deadline || '').localeCompare(y.deadline || '');
-      return (y.published || '').localeCompare(x.published || '');
-    });
-  }
-  return a;
-}
+function regionPriority(r) {
+	  const g = regionGroup(r);
+	  if (g === 'qujing') return 0;
+	  if (g === 'near') return 1;
+	  return 2;
+	}
+
+	function sortJobs(arr) {
+	  const a = arr.slice();
+	  if (state.sort === 'new') {
+	    a.sort((x, y) => {
+	      const rp = regionPriority(x.region) - regionPriority(y.region);
+	      if (rp !== 0) return rp;
+	      return (y.published || '').localeCompare(x.published || '');
+	    });
+	  } else {
+	    const w = j => {
+	      if (!j.deadline) return 2;
+	      const dl = daysLeft(j.deadline);
+	      return dl < 0 ? 3 : 0;
+	    };
+	    a.sort((x, y) => {
+	      const rp = regionPriority(x.region) - regionPriority(y.region);
+	      if (rp !== 0) return rp;
+	      const wx = w(x), wy = w(y);
+	      if (wx !== wy) return wx - wy;
+	      if (wx === 0) return (x.deadline || '').localeCompare(y.deadline || '');
+	      return (y.published || '').localeCompare(x.published || '');
+	    });
+	  }
+	  return a;
+	}
 
 function badge(cls, text) { return `<span class="b ${cls}">${text}</span>`; }
 
 function regionBadge(j) {
-  if (j.region === '曲靖') {
-    return badge('region-main', '曲靖' + (j.region_detail ? ' · ' + j.region_detail : ''));
-  }
-  return badge('region-near', j.region);
-}
+	  if (j.region === '曲靖') {
+	    return badge('region-main', '曲靖' + (j.region_detail ? ' · ' + j.region_detail : ''));
+	  }
+	  const g = regionGroup(j.region);
+	  if (g === 'near') return badge('region-near', j.region);
+	  return badge('region-other', j.region);
+	}
 
 function bianzhiBadge(j) {
   return j.bianzhi === 'yes'
@@ -211,41 +305,51 @@ function bianzhiBadge(j) {
 }
 
 function subjectBadge(j) {
-  const sc = subjOf(j);
-  if (sc === 'english') return badge('english', '🎓 英语岗');
-  if (sc === 'general') return badge('type2', '📋 综合公告·含教师岗');
-  return badge('unknown', '❓ 学科未注明');
-}
+		  const sc = subjOf(j);
+		  if (sc === 'english_clear') return badge('english', '🎓 英语明确');
+		  if (sc === 'english_maybe') return badge('english', '🔍 可能含英语');
+		  if (sc === 'general') return badge('type2', '📋 综合公告·含教师岗');
+		  return badge('unknown', '❓ 学科未注明');
+		}
 
-function deadlineBar(j) {
+function linkUrl(j) { return j.origin_url || j.url; }
+
+	function deadlineBar(j) {
   if (!j.deadline) {
-    return `<div class="deadline dl-none"><span>⏰ 截止时间未抓到，请以公告原文为准</span><a class="go" href="${j.url}" target="_blank">查看原文 →</a></div>`;
-  }
-  const dl = daysLeft(j.deadline);
-  if (dl < 0) return `<div class="deadline dl-passed"><span>报名已于 ${fmtDate(j.deadline)} 截止</span><a class="go" style="color:var(--ink2)" href="${j.url}" target="_blank">查看原文</a></div>`;
-  if (dl <= 3) return `<div class="deadline dl-soon"><span>🔥 ${fmtDate(j.deadline)} 截止（${dl === 0 ? '今天' : '还剩' + dl + '天'}）</span><a class="go" style="color:var(--red)" href="${j.url}" target="_blank">马上去报 →</a></div>`;
-  if (dl <= 10) return `<div class="deadline dl-mid"><span>⏰ ${fmtDate(j.deadline)} 截止（还剩${dl}天）</span><a class="go" style="color:var(--amber)" href="${j.url}" target="_blank">查看原文 →</a></div>`;
-  return `<div class="deadline dl-open"><span>✅ 报名中 · ${fmtDate(j.deadline)} 截止（还剩${dl}天）</span><a class="go" href="${j.url}" target="_blank">查看原文 →</a></div>`;
-}
-
-function renderCard(j) {
+    return `<div class="deadline dl-none"><span>⏰ 截止时间未抓到，请以公告原文为准</span><a class="go" href="${linkUrl(j)}" target="_blank">${j.origin_url ? '原文链接 →' : '查看原文 →'}</a></div>`;
+	  }
+	  const dl = daysLeft(j.deadline);
+	  if (dl < 0) return `<div class="deadline dl-passed"><span>报名已于 ${fmtDate(j.deadline)} 截止</span><a class="go" style="color:var(--ink2)" href="${linkUrl(j)}" target="_blank">${j.origin_url ? '原文链接' : '查看原文'}</a></div>`;
+	  if (dl <= 3) return `<div class="deadline dl-soon"><span>🔥 ${fmtDate(j.deadline)} 截止（${dl === 0 ? '今天' : '还剩' + dl + '天'}）</span><a class="go" style="color:var(--red)" href="${linkUrl(j)}" target="_blank">${j.origin_url ? '原文链接 →' : '马上去报 →'}</a></div>`;
+	  if (dl <= 10) return `<div class="deadline dl-mid"><span>⏰ ${fmtDate(j.deadline)} 截止（还剩${dl}天）</span><a class="go" style="color:var(--amber)" href="${linkUrl(j)}" target="_blank">${j.origin_url ? '原文链接 →' : '查看原文 →'}</a></div>`;
+	  return `<div class="deadline dl-open"><span>✅ 报名中 · ${fmtDate(j.deadline)} 截止（还剩${dl}天）</span><a class="go" href="${linkUrl(j)}" target="_blank">${j.origin_url ? '原文链接 →' : '查看原文 →'}</a></div>`;
+	}
+	
+	function renderCard(j) {
   const expired = j.deadline && daysLeft(j.deadline) < 0;
+  const isRead = readIds.has(j.id);
+  const isFav = favIds.has(j.id);
   const meta = [];
   if (j.headcount) meta.push(`招 ${j.headcount} 人`);
   if (j.age) meta.push(`年龄 ${j.age}`);
   meta.push(`发布 ${j.published || ''}`);
   meta.push(`来源 ${j.source || ''}`);
-  return `<div class="card ${expired ? 'expired' : ''}">
+  return `<div class="card ${expired ? 'expired' : ''} ${isRead ? 'read' : ''} ${isFav ? 'fav' : ''}">
     <div class="badges">
+      ${isRead ? '' : '<span class="unread-dot" title="未查看"></span>'}
       ${regionBadge(j)}
       ${subjectBadge(j)}
       ${(j.jtype === '特岗' || j.jtype === '人才引进') ? badge('type', j.jtype) : ''}
       ${bianzhiBadge(j)}
-      ${j.is_new ? badge('new', 'NEW') : ''}
+      ${(!isRead && j.is_new) ? badge('new', 'NEW') : ''}
     </div>
-    <div class="title"><a href="${j.url}" target="_blank">${j.title}</a></div>
+    <div class="title"><a href="${linkUrl(j)}" target="_blank" data-job-id="${j.id}">${j.title}</a></div>
     <div class="meta">${meta.map(m => `<span>${m}</span>`).join('')}</div>
     ${deadlineBar(j)}
+    <div class="card-ops">
+      ${isRead ? '' : `<button class="mark-read" data-mark-id="${j.id}">标记已读</button>`}
+      <button class="mark-fav ${isFav ? 'on' : ''}" data-fav-id="${j.id}">${isFav ? '★ 已收藏' : '☆ 收藏'}</button>
+    </div>
   </div>`;
 }
 
@@ -256,25 +360,58 @@ function renderProcess() {
     el.innerHTML = `<div class="empty"><div class="big">🗂</div>暂无流程公示记录。<br>招聘过程中的成绩公示、体检考察通知等会自动归档到这里。</div>`;
     return;
   }
-  el.innerHTML = list.map(p => `<div class="card">
-    <div class="badges">
-      ${regionBadge(p)}
-      ${badge('type', '流程公示')}
-      ${p.is_new ? badge('new', 'NEW') : ''}
-    </div>
-    <div class="title"><a href="${p.url}" target="_blank">${p.title}</a></div>
-    <div class="meta"><span>发布 ${p.published || ''}</span><span>来源 ${p.source || ''}</span></div>
-  </div>`).join('');
+  el.innerHTML = list.map(p => {
+    const isRead = readIds.has(p.id);
+    const isFav = favIds.has(p.id);
+    return `<div class="card ${isRead ? 'read' : ''} ${isFav ? 'fav' : ''}">
+      <div class="badges">
+        ${isRead ? '' : '<span class="unread-dot" title="未查看"></span>'}
+        ${regionBadge(p)}
+        ${badge('type', '流程公示')}
+        ${(!isRead && p.is_new) ? badge('new', 'NEW') : ''}
+      </div>
+      <div class="title"><a href="${p.url}" target="_blank" data-job-id="${p.id}">${p.title}</a></div>
+      <div class="meta"><span>发布 ${p.published || ''}</span><span>来源 ${p.source || ''}</span></div>
+      <div class="card-ops">
+        ${isRead ? '' : `<button class="mark-read" data-mark-id="${p.id}">标记已读</button>`}
+        <button class="mark-fav ${isFav ? 'on' : ''}" data-fav-id="${p.id}">${isFav ? '★ 已收藏' : '☆ 收藏'}</button>
+      </div>
+    </div>`;
+  }).join('');
 }
 
 function render() {
   const jobs = DATA.jobs || [];
   const processCount = (DATA.process || []).length;
+  const jobUnread = jobs.filter(j => !readIds.has(j.id)).length;
+  const procUnread = (DATA.process || []).filter(p => !readIds.has(p.id)).length;
+  const unreadTotal = jobUnread + procUnread;
   const isProcessView = state.subject === 'process';
-  const allEnglish = jobs.filter(j => subjOf(j) === 'english').length;
-  const qujing = jobs.filter(j => j.region === '曲靖').length;
-  const newToday = jobs.filter(j => j.is_new).length;
+  const allEnglish = jobs.filter(j => subjOf(j) === 'english_clear' || subjOf(j) === 'english_maybe').length;
+	  const qujing = jobs.filter(j => j.region === '曲靖').length;
+	  const nearJobs = jobs.filter(j => regionGroup(j.region) === 'near').length;
+	  const newToday = jobs.filter(j => j.is_new).length;
   const okSrc = DATA.sources.filter(s => s.ok).length;
+
+  // 未读操作栏：细分岗位/流程未读，岗位全部已读时提示未读在流程公示里
+  const actionRow = document.getElementById('actionRow');
+  const unreadCountEl = document.getElementById('unreadCount');
+  if (unreadTotal > 0) {
+    actionRow.style.display = 'flex';
+    unreadCountEl.textContent = (jobUnread === 0 && procUnread > 0 && !isProcessView)
+      ? `🔔 ${unreadTotal} 条未读 · 都在「🗂 流程公示」里`
+      : `🔔 ${unreadTotal} 条未读`;
+  } else {
+    actionRow.style.display = 'none';
+  }
+  // "流程公示"tab 未读徽标
+  const procBadge = document.getElementById('procBadge');
+  if (procUnread > 0) {
+    procBadge.textContent = procUnread;
+    procBadge.style.display = 'inline-block';
+  } else {
+    procBadge.style.display = 'none';
+  }
 
   document.getElementById('metaLine').innerHTML =
     `<span><span class="dot"></span>最近更新 ${DATA.generated_at}</span>` +
@@ -283,10 +420,10 @@ function render() {
     `<span>本次扫描 ${DATA.total_candidates} 条 · 排除 ${DATA.excluded} 条</span>`;
 
   document.getElementById('summary').innerHTML = `
-    <div class="sum-card"><div class="sum-num">${jobs.length}</div><div class="sum-label">在招机会</div></div>
-    <div class="sum-card"><div class="sum-num green">${qujing}</div><div class="sum-label">曲靖岗位</div></div>
-    <div class="sum-card"><div class="sum-num red">${allEnglish}</div><div class="sum-label">英语岗</div></div>
-    <div class="sum-card"><div class="sum-num">${newToday}</div><div class="sum-label">今日新增</div></div>`;
+	    <div class="sum-card"><div class="sum-num">${jobs.length}</div><div class="sum-label">在招机会</div></div>
+	    <div class="sum-card"><div class="sum-num green">${qujing}</div><div class="sum-label">曲靖岗位</div></div>
+	    <div class="sum-card"><div class="sum-num">${nearJobs}</div><div class="sum-label">周边岗位</div></div>
+	    <div class="sum-card"><div class="sum-num">${newToday}</div><div class="sum-label">今日新增</div></div>`;
 
   document.getElementById('srcList').innerHTML =
     [...new Set(DATA.sources.map(s => s.name))].map(name => {
@@ -331,6 +468,41 @@ document.getElementById('rowSubject').addEventListener('click', e => {
     render();
   }
 });
+
+// 点击职位卡片内任何链接自动标记已读（事件委托）
+document.getElementById('list').addEventListener('click', e => {
+  const favBtn = e.target.closest('button[data-fav-id]');
+  if (favBtn) {
+    toggleFav(favBtn.dataset.favId);
+    render();
+    return;
+  }
+  const btn = e.target.closest('button[data-mark-id]');
+  if (btn) {
+    markRead(btn.dataset.markId);
+    render();
+    return;
+  }
+  const link = e.target.closest('a[data-job-id]');
+  if (link) {
+    markRead(link.dataset.jobId);
+  }
+});
+
+// 标记全部已读
+document.getElementById('markAllRead').addEventListener('click', () => {
+  const allIds = [...(DATA.jobs || []), ...(DATA.process || [])].map(j => j.id);
+  markAllRead(allIds);
+  render();
+});
+
+// 清除已读记录
+document.getElementById('resetRead').addEventListener('click', () => {
+  if (!confirm('确定要清除所有已读记录吗？清除后所有职位会重新显示为未读。')) return;
+  resetRead();
+  render();
+});
+
 render();
 </script>
 </body>
