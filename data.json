@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-12 08:44",
- "generated_date": "2026-09-12",
+ "generated_at": "2026-09-13 00:44",
+ "generated_date": "2026-09-13",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -16,9 +16,9 @@
   },
   {
    "name": "云南省人社厅",
-   "ok": false,
-   "pages_ok": 0,
-   "found": 0
+   "ok": true,
+   "pages_ok": 2,
+   "found": 3
   },
   {
    "name": "华图教育",
@@ -30,7 +30,7 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 63
+   "found": 64
   },
   {
    "name": "山香教育",
@@ -45,7 +45,7 @@
    "found": 0
   }
  ],
- "total_candidates": 137,
+ "total_candidates": 139,
  "excluded": 117,
  "jobs": [
   {
@@ -86,7 +86,7 @@
   },
   {
    "id": "fe25ab1fd520",
-   "title": "云南师范大学附属盘龙中学公开招聘2027届公费师范生公告(9人",
+   "title": "云南师范大学附属盘龙中学公开招聘2027届公",
    "url": "http://yn.huatu.com/2026/0909/2008788.html",
    "source": "华图教育",
    "region": "昆明",
@@ -133,6 +133,24 @@
    "bianzhi": "yes",
    "age": "≤38周岁",
    "headcount": 1,
+   "deadline": null,
+   "published": "2026-08-01",
+   "first_seen": "2026-08-29",
+   "is_new": false
+  },
+  {
+   "id": "704e2618f011",
+   "title": "昆明市第十中学教育集团2026年度最新招聘教育人才公告(12人",
+   "url": "http://yn.huatu.com/2026/0819/2006877.html",
+   "source": "华图教育",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "check",
+   "age": "",
+   "headcount": 12,
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
@@ -247,5 +265,15 @@
    "is_new": false
   }
  ],
- "process": []
+ "process": [
+  {
+   "title": "曲靖市沾益区教育体育局2026年公开招聘教育部直属师范大学公费师范毕业生体检（含吸毒人员排查检查）、考察结果及拟录（聘）用人员名单公示",
+   "url": "http://yn.huatu.com/2026/0911/2008975.html",
+   "source": "华图教育",
+   "region": "曲靖",
+   "region_detail": "沾益区",
+   "published": "2026-09-01",
+   "first_seen": "2026-09-13"
+  }
+ ]
 }
