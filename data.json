@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-14 05:15",
+ "generated_at": "2026-09-14 09:14",
  "generated_date": "2026-09-14",
  "sources": [
   {
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 236,
- "excluded": 184,
+ "excluded": 185,
  "jobs": [
   {
    "id": "86b83cb3531a",
@@ -319,25 +319,6 @@
    "is_new": false
   },
   {
-   "id": "b9c5105dec03",
-   "title": "云南华清中学2026年招聘公告(20人)",
-   "url": "http://yn.huatu.com/2026/0811/2006076.html",
-   "origin_url": "https://mp.weixin.qq.com/s/Ya0WusmR0UBve7URv_b6BQ",
-   "source": "华图教育",
-   "region": "云南其他",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": false,
-   "subject_class": "teacher_unknown",
-   "bianzhi": "yes",
-   "age": "",
-   "headcount": 20,
-   "deadline": null,
-   "published": "2026-08-01",
-   "first_seen": "2026-08-29",
-   "is_new": false
-  },
-  {
    "id": "6f77024f02ec",
    "title": "2026黔西南技师学院招聘事业单位工作人员（第二批）简章（9人）2026-08-1909:37[考试公告]",
    "url": "https://m.gz.huatu.com/2026/0819/2034712.html",
@@ -373,6 +354,25 @@
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-09-13",
+   "is_new": false
+  },
+  {
+   "id": "b9c5105dec03",
+   "title": "云南华清中学2026年招聘公告(20人)",
+   "url": "http://yn.huatu.com/2026/0811/2006076.html",
+   "origin_url": "https://mp.weixin.qq.com/s/Ya0WusmR0UBve7URv_b6BQ",
+   "source": "华图教育",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": 20,
+   "deadline": null,
+   "published": "2026-08-01",
+   "first_seen": "2026-08-29",
    "is_new": false
   },
   {
