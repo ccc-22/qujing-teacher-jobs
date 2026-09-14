@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-14 01:15",
+ "generated_at": "2026-09-14 05:15",
  "generated_date": "2026-09-14",
  "sources": [
   {
@@ -16,9 +16,9 @@
   },
   {
    "name": "云南省人社厅",
-   "ok": true,
-   "pages_ok": 4,
-   "found": 5
+   "ok": false,
+   "pages_ok": 0,
+   "found": 0
   },
   {
    "name": "华图教育",
@@ -30,7 +30,7 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 64
+   "found": 65
   },
   {
    "name": "山香教育",
@@ -87,28 +87,9 @@
    "found": 40
   }
  ],
- "total_candidates": 241,
- "excluded": 188,
+ "total_candidates": 236,
+ "excluded": 184,
  "jobs": [
-  {
-   "id": "7c5d43930eaf",
-   "title": "2026年下半年云南省交通运输厅所属事业单位公开招聘高层次和急需紧缺专业技术人才...",
-   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65843&ClassID=602",
-   "origin_url": "https://www.puershi.gov.cn/zwgk/zfxxgk2/zfbmxxgk/pesrlzyshbzj/zfxxgkzn.htm",
-   "source": "云南省人社厅",
-   "region": "云南其他",
-   "region_detail": "",
-   "jtype": "事业编统考",
-   "english": false,
-   "subject_class": "general",
-   "bianzhi": "yes",
-   "age": "≤18周岁",
-   "headcount": null,
-   "deadline": "2026-12-31",
-   "published": "2026-09-03",
-   "first_seen": "2026-09-03",
-   "is_new": false
-  },
   {
    "id": "86b83cb3531a",
    "title": "2026毕节纳雍县面向社会公开招聘教师简章（22人）2026-08-1117:12[考试公告]",
@@ -126,6 +107,25 @@
    "deadline": "2026-12-31",
    "published": "2026-08-01",
    "first_seen": "2026-09-13",
+   "is_new": false
+  },
+  {
+   "id": "7c5d43930eaf",
+   "title": "2026年下半年云南省交通运输厅所属事业单位公开招聘高层次和急需紧缺专业技术人才...",
+   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65843&ClassID=602",
+   "origin_url": "https://www.puershi.gov.cn/zwgk/zfxxgk2/zfbmxxgk/pesrlzyshbzj/zfxxgkzn.htm",
+   "source": "云南省人社厅",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "事业编统考",
+   "english": false,
+   "subject_class": "general",
+   "bianzhi": "yes",
+   "age": "≤18周岁",
+   "headcount": null,
+   "deadline": "2026-12-31",
+   "published": "2026-09-03",
+   "first_seen": "2026-09-03",
    "is_new": false
   },
   {
