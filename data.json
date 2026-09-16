@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-15 09:13",
- "generated_date": "2026-09-15",
+ "generated_at": "2026-09-16 01:14",
+ "generated_date": "2026-09-16",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -16,9 +16,9 @@
   },
   {
    "name": "云南省人社厅",
-   "ok": true,
-   "pages_ok": 4,
-   "found": 4
+   "ok": false,
+   "pages_ok": 0,
+   "found": 0
   },
   {
    "name": "华图教育",
@@ -87,8 +87,8 @@
    "found": 40
   }
  ],
- "total_candidates": 240,
- "excluded": 189,
+ "total_candidates": 236,
+ "excluded": 185,
  "jobs": [
   {
    "id": "86b83cb3531a",
@@ -412,7 +412,7 @@
    "region": "昆明",
    "region_detail": "",
    "published": "2026-08-01",
-   "first_seen": "2026-09-15"
+   "first_seen": "2026-09-16"
   },
   {
    "title": "2026年曲靖市麒麟区教体局所属事业单位招聘",
