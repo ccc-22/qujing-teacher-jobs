@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-17 05:37",
+ "generated_at": "2026-09-17 10:09",
  "generated_date": "2026-09-17",
  "sources": [
   {
@@ -24,7 +24,7 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 59
+   "found": 58
   },
   {
    "name": "华图教育",
@@ -72,7 +72,7 @@
    "name": "云南华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 37
+   "found": 36
   },
   {
    "name": "云南中公教育",
@@ -87,8 +87,8 @@
    "found": 40
   }
  ],
- "total_candidates": 236,
- "excluded": 185,
+ "total_candidates": 235,
+ "excluded": 184,
  "jobs": [
   {
    "id": "86b83cb3531a",
@@ -127,6 +127,25 @@
    "published": "2026-09-03",
    "first_seen": "2026-09-03",
    "is_new": false
+  },
+  {
+   "id": "bf7a3271dcb2",
+   "title": "昆明星耀天成学校2026年教师招聘公告(2人)",
+   "url": "http://yn.huatu.com/2026/0917/2009581.html",
+   "origin_url": "https://mp.weixin.qq.com/s/zLbN2inwEZmYP3R0HyC2CA?scene=1",
+   "source": "华图教育",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": 2,
+   "deadline": null,
+   "published": "2026-09-01",
+   "first_seen": "2026-09-17",
+   "is_new": true
   },
   {
    "id": "565daec83bb5",
@@ -338,25 +357,6 @@
    "is_new": false
   },
   {
-   "id": "74b6044f89e8",
-   "title": "2026秋季云南昆明市卫生学校学期招聘15名公告2026-08-1711:01:54199人",
-   "url": "https://m.huatu.com/jiaoshi/2026/0817/2870711.html",
-   "origin_url": "http://mp.weixin.qq.com/s?__biz=MzkyMDg0ODI0OQ==&mid=2247573487&idx=6&sn=effb56f9a883e21dac533fd244b",
-   "source": "华图教师云南",
-   "region": "昆明",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": false,
-   "subject_class": "teacher_unknown",
-   "bianzhi": "check",
-   "age": "",
-   "headcount": 4199,
-   "deadline": null,
-   "published": "2026-08-01",
-   "first_seen": "2026-09-13",
-   "is_new": false
-  },
-  {
    "id": "b9c5105dec03",
    "title": "云南华清中学2026年招聘公告(20人)",
    "url": "http://yn.huatu.com/2026/0811/2006076.html",
@@ -392,6 +392,25 @@
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-08-29",
+   "is_new": false
+  },
+  {
+   "id": "74b6044f89e8",
+   "title": "2026秋季云南昆明市卫生学校学期招聘15名公告2026-08-1711:01:54199人",
+   "url": "https://m.huatu.com/jiaoshi/2026/0817/2870711.html",
+   "origin_url": "http://mp.weixin.qq.com/s?__biz=MzkyMDg0ODI0OQ==&mid=2247573487&idx=6&sn=effb56f9a883e21dac533fd244b",
+   "source": "华图教师云南",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "check",
+   "age": "",
+   "headcount": 4199,
+   "deadline": null,
+   "published": "2026-08-01",
+   "first_seen": "2026-09-13",
    "is_new": false
   }
  ],
