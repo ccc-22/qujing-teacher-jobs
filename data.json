@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-17 14:14",
- "generated_date": "2026-09-17",
+ "generated_at": "2026-09-18 05:30",
+ "generated_date": "2026-09-18",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 235,
- "excluded": 184,
+ "excluded": 183,
  "jobs": [
   {
    "id": "86b83cb3531a",
@@ -129,22 +129,22 @@
    "is_new": false
   },
   {
-   "id": "bf7a3271dcb2",
-   "title": "昆明星耀天成学校2026年教师招聘公告(2人)",
-   "url": "http://yn.huatu.com/2026/0917/2009581.html",
+   "id": "405b558298a5",
+   "title": "昆明星耀天成学校2026年教师招聘公告(2人)2026-09-1716:28[招聘公告]",
+   "url": "https://m.yn.huatu.com/2026/0917/2009581.html",
    "origin_url": "https://mp.weixin.qq.com/s/zLbN2inwEZmYP3R0HyC2CA?scene=1",
-   "source": "华图教育",
+   "source": "云南华图",
    "region": "昆明",
    "region_detail": "",
    "jtype": "教师招聘",
-   "english": false,
-   "subject_class": "teacher_unknown",
-   "bianzhi": "yes",
+   "english": true,
+   "subject_class": "english_maybe",
+   "bianzhi": "check",
    "age": "",
-   "headcount": 2,
+   "headcount": null,
    "deadline": null,
    "published": "2026-09-01",
-   "first_seen": "2026-09-17",
+   "first_seen": "2026-09-18",
    "is_new": true
   },
   {
@@ -431,7 +431,7 @@
    "region": "昆明",
    "region_detail": "",
    "published": "2026-08-01",
-   "first_seen": "2026-09-17"
+   "first_seen": "2026-09-18"
   },
   {
    "title": "2026年曲靖市麒麟区教体局所属事业单位招聘",
