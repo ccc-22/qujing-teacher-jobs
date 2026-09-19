@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-18 13:39",
- "generated_date": "2026-09-18",
+ "generated_at": "2026-09-19 05:21",
+ "generated_date": "2026-09-19",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -107,7 +107,7 @@
    "deadline": "2026-09-24",
    "published": "2026-09-01",
    "first_seen": "2026-09-18",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "86b83cb3531a",
@@ -164,7 +164,7 @@
    "deadline": null,
    "published": "2026-09-01",
    "first_seen": "2026-09-18",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "565daec83bb5",
@@ -450,7 +450,7 @@
    "region": "昆明",
    "region_detail": "",
    "published": "2026-08-01",
-   "first_seen": "2026-09-18"
+   "first_seen": "2026-09-19"
   },
   {
    "title": "2026年曲靖市麒麟区教体局所属事业单位招聘",
