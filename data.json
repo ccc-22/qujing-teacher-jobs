@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-19 09:27",
+ "generated_at": "2026-09-19 13:07",
  "generated_date": "2026-09-19",
  "sources": [
   {
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 241,
- "excluded": 188,
+ "excluded": 187,
  "jobs": [
   {
    "id": "4bf2633384c4",
@@ -146,6 +146,25 @@
    "published": "2026-09-03",
    "first_seen": "2026-09-03",
    "is_new": false
+  },
+  {
+   "id": "9b63ed5e45f7",
+   "title": "2026年下半年云南省生态环境厅所属事业单位公开招聘人员公告",
+   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65809&ClassID=602",
+   "origin_url": "",
+   "source": "云南省人社厅",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "事业编统考",
+   "english": false,
+   "subject_class": "general",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-09-19",
+   "first_seen": "2026-09-19",
+   "is_new": true
   },
   {
    "id": "405b558298a5",
