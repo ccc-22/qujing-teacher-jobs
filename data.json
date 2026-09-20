@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-20 09:59",
+ "generated_at": "2026-09-20 13:43",
  "generated_date": "2026-09-20",
  "sources": [
   {
@@ -24,13 +24,13 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 59
+   "found": 60
   },
   {
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 65
+   "found": 66
   },
   {
    "name": "山香教育",
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 237,
- "excluded": 185,
+ "excluded": 186,
  "jobs": [
   {
    "id": "4bf2633384c4",
