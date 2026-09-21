@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-20 13:43",
- "generated_date": "2026-09-20",
+ "generated_at": "2026-09-21 05:46",
+ "generated_date": "2026-09-21",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 237,
- "excluded": 186,
+ "excluded": 187,
  "jobs": [
   {
    "id": "4bf2633384c4",
@@ -463,15 +463,6 @@
    "first_seen": "2026-09-13"
   },
   {
-   "title": "昆明石林彝族自治县教育体育局编外聘用人员招聘公告(8人)2026-08-2509:02[招聘公告]",
-   "url": "https://m.yn.huatu.com/2026/0825/2007289.html",
-   "source": "云南华图",
-   "region": "昆明",
-   "region_detail": "",
-   "published": "2026-08-01",
-   "first_seen": "2026-09-20"
-  },
-  {
    "title": "2026年曲靖市麒麟区教体局所属事业单位招聘",
    "url": "http://yn.huatu.com/2026/0810/2005850.html",
    "source": "华图教育",
@@ -497,6 +488,15 @@
    "region_detail": "",
    "published": "2026-08-01",
    "first_seen": "2026-08-29"
+  },
+  {
+   "title": "昆明石林彝族自治县教育体育局编外聘用人员招聘公告(8人)2026-08-2509:02[招聘公告]",
+   "url": "https://m.yn.huatu.com/2026/0825/2007289.html",
+   "source": "云南华图",
+   "region": "昆明",
+   "region_detail": "",
+   "published": "2026-08-01",
+   "first_seen": "2026-09-21"
   },
   {
    "title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告",
