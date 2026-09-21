@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-21 05:46",
+ "generated_at": "2026-09-21 10:43",
  "generated_date": "2026-09-21",
  "sources": [
   {
@@ -24,7 +24,7 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 60
+   "found": 61
   },
   {
    "name": "华图教育",
@@ -87,7 +87,7 @@
    "found": 40
   }
  ],
- "total_candidates": 237,
+ "total_candidates": 238,
  "excluded": 187,
  "jobs": [
   {
@@ -165,6 +165,25 @@
    "published": "2026-09-19",
    "first_seen": "2026-09-19",
    "is_new": false
+  },
+  {
+   "id": "9f2b16082ec6",
+   "title": "云南锡业职业技术学院2026年招聘简章，正式员工，五险二金！",
+   "url": "http://yn.huatu.com/2026/0921/2010409.html",
+   "origin_url": "https://mp.weixin.qq.com/s/TP8UUV0TqNuU6vdCBEERVA",
+   "source": "华图教育",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-09-01",
+   "first_seen": "2026-09-21",
+   "is_new": true
   },
   {
    "id": "405b558298a5",
