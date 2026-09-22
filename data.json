@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-22 05:46",
+ "generated_at": "2026-09-22 09:55",
  "generated_date": "2026-09-22",
  "sources": [
   {
@@ -16,9 +16,9 @@
   },
   {
    "name": "云南省人社厅",
-   "ok": false,
-   "pages_ok": 0,
-   "found": 0
+   "ok": true,
+   "pages_ok": 4,
+   "found": 10
   },
   {
    "name": "华图教育",
@@ -34,14 +34,14 @@
   },
   {
    "name": "山香教育",
-   "ok": false,
-   "pages_ok": 0,
-   "found": 0
+   "ok": true,
+   "pages_ok": 1,
+   "found": 19
   },
   {
    "name": "山香教育",
-   "ok": false,
-   "pages_ok": 0,
+   "ok": true,
+   "pages_ok": 1,
    "found": 0
   },
   {
@@ -87,8 +87,8 @@
    "found": 40
   }
  ],
- "total_candidates": 220,
- "excluded": 168,
+ "total_candidates": 249,
+ "excluded": 194,
  "jobs": [
   {
    "id": "4bf2633384c4",
@@ -146,6 +146,44 @@
    "published": "2026-09-03",
    "first_seen": "2026-09-03",
    "is_new": false
+  },
+  {
+   "id": "da4b9df67bb8",
+   "title": "2026年下半年云南技师学院（云南工贸职业技术学院）公开招聘人员公告",
+   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65816&ClassID=602",
+   "origin_url": "",
+   "source": "云南省人社厅",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_clear",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-09-22",
+   "first_seen": "2026-09-22",
+   "is_new": true
+  },
+  {
+   "id": "c854ed9c6d10",
+   "title": "2026年下半年云南省水利厅部分直属事业单位公开招聘人员公告",
+   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65815&ClassID=602",
+   "origin_url": "",
+   "source": "云南省人社厅",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "事业编统考",
+   "english": false,
+   "subject_class": "general",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-09-22",
+   "first_seen": "2026-09-22",
+   "is_new": true
   },
   {
    "id": "9b63ed5e45f7",
