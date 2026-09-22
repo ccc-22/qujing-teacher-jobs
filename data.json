@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-22 09:55",
+ "generated_at": "2026-09-22 14:08",
  "generated_date": "2026-09-22",
  "sources": [
   {
@@ -16,9 +16,9 @@
   },
   {
    "name": "云南省人社厅",
-   "ok": true,
-   "pages_ok": 4,
-   "found": 10
+   "ok": false,
+   "pages_ok": 0,
+   "found": 0
   },
   {
    "name": "华图教育",
@@ -87,8 +87,8 @@
    "found": 40
   }
  ],
- "total_candidates": 249,
- "excluded": 194,
+ "total_candidates": 239,
+ "excluded": 187,
  "jobs": [
   {
    "id": "4bf2633384c4",
