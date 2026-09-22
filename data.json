@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-21 15:51",
- "generated_date": "2026-09-21",
+ "generated_at": "2026-09-22 05:46",
+ "generated_date": "2026-09-22",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -34,14 +34,14 @@
   },
   {
    "name": "山香教育",
-   "ok": true,
-   "pages_ok": 1,
-   "found": 19
+   "ok": false,
+   "pages_ok": 0,
+   "found": 0
   },
   {
    "name": "山香教育",
-   "ok": true,
-   "pages_ok": 1,
+   "ok": false,
+   "pages_ok": 0,
    "found": 0
   },
   {
@@ -87,8 +87,8 @@
    "found": 40
   }
  ],
- "total_candidates": 239,
- "excluded": 187,
+ "total_candidates": 220,
+ "excluded": 168,
  "jobs": [
   {
    "id": "4bf2633384c4",
@@ -183,7 +183,7 @@
    "deadline": null,
    "published": "2026-09-01",
    "first_seen": "2026-09-21",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "405b558298a5",
@@ -515,7 +515,7 @@
    "region": "昆明",
    "region_detail": "",
    "published": "2026-08-01",
-   "first_seen": "2026-09-21"
+   "first_seen": "2026-09-22"
   },
   {
    "title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告",
