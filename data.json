@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-22 14:08",
- "generated_date": "2026-09-22",
+ "generated_at": "2026-09-23 05:32",
+ "generated_date": "2026-09-23",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -164,7 +164,7 @@
    "deadline": null,
    "published": "2026-09-22",
    "first_seen": "2026-09-22",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "c854ed9c6d10",
@@ -183,7 +183,7 @@
    "deadline": null,
    "published": "2026-09-22",
    "first_seen": "2026-09-22",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "9b63ed5e45f7",
@@ -553,7 +553,7 @@
    "region": "昆明",
    "region_detail": "",
    "published": "2026-08-01",
-   "first_seen": "2026-09-22"
+   "first_seen": "2026-09-23"
   },
   {
    "title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告",
