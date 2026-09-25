@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-24 14:13",
- "generated_date": "2026-09-24",
+ "generated_at": "2026-09-25 05:37",
+ "generated_date": "2026-09-25",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -91,25 +91,6 @@
  "excluded": 202,
  "jobs": [
   {
-   "id": "4bf2633384c4",
-   "title": "2026贵州电子信息职业技术学院招聘兼职教师公告（13人）2026-09-1816:41[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/0918/2036381.html",
-   "origin_url": "https://www.gzeic.edu.cn/info/1053/7935.htm",
-   "source": "贵州华图",
-   "region": "贵州其他",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": true,
-   "subject_class": "english_maybe",
-   "bianzhi": "yes",
-   "age": "",
-   "headcount": null,
-   "deadline": "2026-09-24",
-   "published": "2026-09-01",
-   "first_seen": "2026-09-18",
-   "is_new": false
-  },
-  {
    "id": "86b83cb3531a",
    "title": "2026毕节纳雍县面向社会公开招聘教师简章（22人）2026-08-1117:12[考试公告]",
    "url": "https://m.gz.huatu.com/2026/0811/2033991.html",
@@ -146,6 +127,25 @@
    "published": "2026-09-03",
    "first_seen": "2026-09-03",
    "is_new": false
+  },
+  {
+   "id": "350d4ddd5169",
+   "title": "2026年下半年云南省工业和信息化厅直属事业单位公开招聘人员公告",
+   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65833&ClassID=602",
+   "origin_url": "",
+   "source": "云南省人社厅",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "事业编统考",
+   "english": false,
+   "subject_class": "general",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-09-25",
+   "first_seen": "2026-09-25",
+   "is_new": true
   },
   {
    "id": "da4b9df67bb8",
@@ -517,7 +517,7 @@
    "region": "曲靖",
    "region_detail": "会泽县",
    "published": "2026-09-01",
-   "first_seen": "2026-09-24"
+   "first_seen": "2026-09-25"
   },
   {
    "title": "曲靖市沾益区教育体育局2026年公开招聘教育",
@@ -562,7 +562,7 @@
    "region": "昆明",
    "region_detail": "",
    "published": "2026-08-01",
-   "first_seen": "2026-09-24"
+   "first_seen": "2026-09-25"
   },
   {
    "title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告",
