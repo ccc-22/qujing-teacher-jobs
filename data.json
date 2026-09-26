@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-09-25 14:33",
- "generated_date": "2026-09-25",
+ "generated_at": "2026-09-26 05:46",
+ "generated_date": "2026-09-26",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -16,9 +16,9 @@
   },
   {
    "name": "云南省人社厅",
-   "ok": true,
-   "pages_ok": 4,
-   "found": 18
+   "ok": false,
+   "pages_ok": 0,
+   "found": 0
   },
   {
    "name": "华图教育",
@@ -87,8 +87,8 @@
    "found": 40
   }
  ],
- "total_candidates": 257,
- "excluded": 202,
+ "total_candidates": 239,
+ "excluded": 188,
  "jobs": [
   {
    "id": "86b83cb3531a",
@@ -145,7 +145,7 @@
    "deadline": null,
    "published": "2026-09-25",
    "first_seen": "2026-09-25",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "da4b9df67bb8",
@@ -517,7 +517,7 @@
    "region": "曲靖",
    "region_detail": "会泽县",
    "published": "2026-09-01",
-   "first_seen": "2026-09-25"
+   "first_seen": "2026-09-26"
   },
   {
    "title": "曲靖市沾益区教育体育局2026年公开招聘教育",
@@ -562,7 +562,7 @@
    "region": "昆明",
    "region_detail": "",
    "published": "2026-08-01",
-   "first_seen": "2026-09-25"
+   "first_seen": "2026-09-26"
   },
   {
    "title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告",
