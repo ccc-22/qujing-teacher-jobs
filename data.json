@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-28 11:42",
+ "generated_at": "2026-09-28 17:25",
  "generated_date": "2026-09-28",
  "sources": [
   {
@@ -88,8 +88,27 @@
   }
  ],
  "total_candidates": 243,
- "excluded": 188,
+ "excluded": 187,
  "jobs": [
+  {
+   "id": "0fb194845ba3",
+   "title": "2026年招聘昆明市官渡区教育体育局部分学校聘用制教育工作人员公告2026-09-2818:12[招聘公告]",
+   "url": "https://m.yn.huatu.com/2026/0928/2010752.html",
+   "origin_url": "",
+   "source": "云南华图",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_clear",
+   "bianzhi": "yes",
+   "age": "≤18周岁",
+   "headcount": null,
+   "deadline": "2026-10-10",
+   "published": "2026-09-01",
+   "first_seen": "2026-09-28",
+   "is_new": true
+  },
   {
    "id": "86b83cb3531a",
    "title": "2026毕节纳雍县面向社会公开招聘教师简章（22人）2026-08-1117:12[考试公告]",
