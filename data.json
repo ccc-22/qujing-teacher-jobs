@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-28 06:12",
+ "generated_at": "2026-09-28 11:42",
  "generated_date": "2026-09-28",
  "sources": [
   {
@@ -24,13 +24,13 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 61
+   "found": 65
   },
   {
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 64
+   "found": 68
   },
   {
    "name": "山香教育",
@@ -87,7 +87,7 @@
    "found": 40
   }
  ],
- "total_candidates": 239,
+ "total_candidates": 243,
  "excluded": 188,
  "jobs": [
   {
@@ -511,11 +511,47 @@
  ],
  "process": [
   {
-   "title": "会泽县2026年服务期满特岗教师拟转聘为在编教师公示",
-   "url": "http://yn.huatu.com/2026/0922/2010449.html",
+   "title": "富源县教育体育局所属部分学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
+   "url": "http://yn.huatu.com/2026/0928/2010626.html",
    "source": "华图教育",
    "region": "曲靖",
-   "region_detail": "会泽县",
+   "region_detail": "富源县",
+   "published": "2026-09-01",
+   "first_seen": "2026-09-28"
+  },
+  {
+   "title": "曲靖经济技术开发区管委会所属学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
+   "url": "http://yn.huatu.com/2026/0924/2010608.html",
+   "source": "华图教育",
+   "region": "曲靖",
+   "region_detail": "",
+   "published": "2026-09-01",
+   "first_seen": "2026-09-28"
+  },
+  {
+   "title": "曲靖经济技术开发区托管学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
+   "url": "http://yn.huatu.com/2026/0924/2010607.html",
+   "source": "华图教育",
+   "region": "曲靖",
+   "region_detail": "",
+   "published": "2026-09-01",
+   "first_seen": "2026-09-28"
+  },
+  {
+   "title": "曲靖市第一中学公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
+   "url": "http://yn.huatu.com/2026/0924/2010604.html",
+   "source": "华图教育",
+   "region": "曲靖",
+   "region_detail": "",
+   "published": "2026-09-01",
+   "first_seen": "2026-09-28"
+  },
+  {
+   "title": "云南省曲靖市民族中学公开引进2026年教育人才专项体检、考察结果及拟录（聘）人员公示",
+   "url": "http://yn.huatu.com/2026/0924/2010603.html",
+   "source": "华图教育",
+   "region": "曲靖",
+   "region_detail": "",
    "published": "2026-09-01",
    "first_seen": "2026-09-28"
   },
@@ -527,6 +563,15 @@
    "region_detail": "沾益区",
    "published": "2026-09-01",
    "first_seen": "2026-09-13"
+  },
+  {
+   "title": "会泽县2026年服务期满特岗教师拟转聘为在编教师公示",
+   "url": "http://yn.huatu.com/2026/0922/2010449.html",
+   "source": "华图教育",
+   "region": "曲靖",
+   "region_detail": "会泽县",
+   "published": "2026-09-01",
+   "first_seen": "2026-09-28"
   },
   {
    "title": "2026年曲靖市麒麟区教体局所属事业单位招聘",
