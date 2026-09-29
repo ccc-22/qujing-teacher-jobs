@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-29 11:22",
+ "generated_at": "2026-09-29 15:31",
  "generated_date": "2026-09-29",
  "sources": [
   {
@@ -16,9 +16,9 @@
   },
   {
    "name": "云南省人社厅",
-   "ok": false,
-   "pages_ok": 0,
-   "found": 0
+   "ok": true,
+   "pages_ok": 4,
+   "found": 19
   },
   {
    "name": "华图教育",
@@ -87,15 +87,15 @@
    "found": 40
   }
  ],
- "total_candidates": 244,
- "excluded": 188,
+ "total_candidates": 263,
+ "excluded": 203,
  "jobs": [
   {
-   "id": "1cbc8068ada8",
-   "title": "2026年招聘昆明市官渡区教育体育局部分学校聘用制教育工作人员公告（17人）",
-   "url": "http://yn.huatu.com/2026/0929/2010783.html",
+   "id": "4a48efadfee8",
+   "title": "2026年招聘昆明市官渡区教育体育局部分学校聘用制教育工作人员公告（17人）2026-09-2914:52[招聘公告]",
+   "url": "https://m.yn.huatu.com/2026/0929/2010783.html",
    "origin_url": "https://www.ynkszp.net/zhaopingonggao/806.html",
-   "source": "华图教育",
+   "source": "云南华图",
    "region": "昆明",
    "region_detail": "",
    "jtype": "教师招聘",
@@ -103,7 +103,7 @@
    "subject_class": "english_clear",
    "bianzhi": "yes",
    "age": "≤18周岁",
-   "headcount": 17,
+   "headcount": null,
    "deadline": "2026-10-10",
    "published": "2026-09-01",
    "first_seen": "2026-09-29",
