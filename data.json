@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-30 06:18",
+ "generated_at": "2026-09-30 11:15",
  "generated_date": "2026-09-30",
  "sources": [
   {
@@ -24,7 +24,7 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 65
+   "found": 63
   },
   {
    "name": "华图教育",
@@ -87,8 +87,8 @@
    "found": 40
   }
  ],
- "total_candidates": 246,
- "excluded": 189,
+ "total_candidates": 245,
+ "excluded": 187,
  "jobs": [
   {
    "id": "4a48efadfee8",
@@ -241,6 +241,44 @@
    "published": "2026-09-19",
    "first_seen": "2026-09-19",
    "is_new": false
+  },
+  {
+   "id": "578bce90fb26",
+   "title": "云南医药健康职业学院2026年下半年岗位招聘公告（4人）",
+   "url": "http://yn.huatu.com/2026/0930/2010836.html",
+   "origin_url": "https://mp.weixin.qq.com/s/_MoLDPxdQEYZgCQxhVsrnQ",
+   "source": "华图教育",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": 4,
+   "deadline": null,
+   "published": "2026-09-01",
+   "first_seen": "2026-09-30",
+   "is_new": true
+  },
+  {
+   "id": "810e6586aadb",
+   "title": "昆明市盘龙区2026年面向全国引进中学教育人才公告（第二批）",
+   "url": "http://yn.huatu.com/2026/0930/2010831.html",
+   "origin_url": "http://www.kmpl.gov.cn/c/2026-09-30/7183955.shtml",
+   "source": "华图教育",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "人才引进",
+   "english": true,
+   "subject_class": "english_maybe",
+   "bianzhi": "yes",
+   "age": "≤40周岁",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-09-01",
+   "first_seen": "2026-09-30",
+   "is_new": true
   },
   {
    "id": "3da2061feab9",
@@ -452,25 +490,6 @@
    "is_new": false
   },
   {
-   "id": "5096695b7d26",
-   "title": "昆明市高新区2026年最新招聘教育工作人员公告(3人）2026-08-2415:57[招聘公告]",
-   "url": "https://m.yn.huatu.com/2026/0824/2007214.html",
-   "origin_url": "https://mp.weixin.qq.com/s/pixtRKryWISSfX_h51GEng",
-   "source": "云南华图",
-   "region": "昆明",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": true,
-   "subject_class": "english_maybe",
-   "bianzhi": "check",
-   "age": "≤38周岁",
-   "headcount": 3,
-   "deadline": null,
-   "published": "2026-08-01",
-   "first_seen": "2026-09-13",
-   "is_new": false
-  },
-  {
    "id": "6f77024f02ec",
    "title": "2026黔西南技师学院招聘事业单位工作人员（第二批）简章（9人）2026-08-1909:37[考试公告]",
    "url": "https://m.gz.huatu.com/2026/0819/2034712.html",
@@ -487,6 +506,25 @@
    "deadline": null,
    "published": "2026-08-01",
    "first_seen": "2026-09-14",
+   "is_new": false
+  },
+  {
+   "id": "5096695b7d26",
+   "title": "昆明市高新区2026年最新招聘教育工作人员公告(3人）2026-08-2415:57[招聘公告]",
+   "url": "https://m.yn.huatu.com/2026/0824/2007214.html",
+   "origin_url": "https://mp.weixin.qq.com/s/pixtRKryWISSfX_h51GEng",
+   "source": "云南华图",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_maybe",
+   "bianzhi": "check",
+   "age": "≤38周岁",
+   "headcount": 3,
+   "deadline": null,
+   "published": "2026-08-01",
+   "first_seen": "2026-09-13",
    "is_new": false
   },
   {
