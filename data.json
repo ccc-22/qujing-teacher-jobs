@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-04 06:38",
+ "generated_at": "2026-10-04 11:11",
  "generated_date": "2026-10-04",
  "sources": [
   {
@@ -16,9 +16,9 @@
   },
   {
    "name": "云南省人社厅",
-   "ok": false,
-   "pages_ok": 0,
-   "found": 0
+   "ok": true,
+   "pages_ok": 4,
+   "found": 20
   },
   {
    "name": "华图教育",
@@ -34,14 +34,14 @@
   },
   {
    "name": "山香教育",
-   "ok": false,
-   "pages_ok": 0,
-   "found": 0
+   "ok": true,
+   "pages_ok": 1,
+   "found": 19
   },
   {
    "name": "山香教育",
-   "ok": false,
-   "pages_ok": 0,
+   "ok": true,
+   "pages_ok": 1,
    "found": 0
   },
   {
@@ -87,8 +87,8 @@
    "found": 40
   }
  ],
- "total_candidates": 226,
- "excluded": 165,
+ "total_candidates": 265,
+ "excluded": 199,
  "jobs": [
   {
    "id": "4a48efadfee8",
@@ -165,6 +165,25 @@
    "published": "2026-09-03",
    "first_seen": "2026-09-03",
    "is_new": false
+  },
+  {
+   "id": "c5c8e818a49f",
+   "title": "2026年下半年云南省数据局所属事业单位公开招聘人员公告",
+   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65839&ClassID=602",
+   "origin_url": "",
+   "source": "云南省人社厅",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "事业编统考",
+   "english": false,
+   "subject_class": "general",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-10-04",
+   "first_seen": "2026-10-04",
+   "is_new": true
   },
   {
    "id": "350d4ddd5169",
