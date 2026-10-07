@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-07 11:48",
+ "generated_at": "2026-10-07 16:11",
  "generated_date": "2026-10-07",
  "sources": [
   {
@@ -48,13 +48,13 @@
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 28
+   "found": 30
   },
   {
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 28
+   "found": 30
   },
   {
    "name": "红河人才网",
@@ -87,8 +87,8 @@
    "found": 40
   }
  ],
- "total_candidates": 240,
- "excluded": 184,
+ "total_candidates": 242,
+ "excluded": 185,
  "jobs": [
   {
    "id": "4a48efadfee8",
@@ -184,6 +184,25 @@
    "published": "2026-10-04",
    "first_seen": "2026-10-04",
    "is_new": false
+  },
+  {
+   "id": "564961811bd2",
+   "title": "招聘公告】盘州市第十幼儿园专任教师招聘公告2026-10-0717:30[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1007/2036971.html",
+   "origin_url": "",
+   "source": "贵州华图",
+   "region": "贵州邻近",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_maybe",
+   "bianzhi": "check",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-10-01",
+   "first_seen": "2026-10-07",
+   "is_new": true
   },
   {
    "id": "350d4ddd5169",
@@ -529,6 +548,15 @@
   }
  ],
  "process": [
+  {
+   "title": "盘州市翰林街道华屯幼儿园2026年秋季学期招聘教师公告2026-10-0715:16[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1007/2036968.html",
+   "source": "贵州华图",
+   "region": "贵州邻近",
+   "region_detail": "",
+   "published": "2026-10-01",
+   "first_seen": "2026-10-07"
+  },
   {
    "title": "昆明医科大学关于2026年公开招聘编制外教学科研工作人员第一批拟聘用人员的公示",
    "url": "http://yn.huatu.com/2026/0929/2010794.html",
