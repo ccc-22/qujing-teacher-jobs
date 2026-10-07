@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-06 15:54",
- "generated_date": "2026-10-06",
+ "generated_at": "2026-10-07 06:45",
+ "generated_date": "2026-10-07",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -16,21 +16,21 @@
   },
   {
    "name": "云南省人社厅",
-   "ok": false,
-   "pages_ok": 0,
-   "found": 0
+   "ok": true,
+   "pages_ok": 4,
+   "found": 20
   },
   {
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 63
+   "found": 61
   },
   {
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 68
+   "found": 64
   },
   {
    "name": "山香教育",
@@ -72,7 +72,7 @@
    "name": "云南华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 36
+   "found": 37
   },
   {
    "name": "云南中公教育",
@@ -87,8 +87,8 @@
    "found": 40
   }
  ],
- "total_candidates": 245,
- "excluded": 184,
+ "total_candidates": 260,
+ "excluded": 199,
  "jobs": [
   {
    "id": "4a48efadfee8",
@@ -536,52 +536,7 @@
    "region": "昆明",
    "region_detail": "",
    "published": "2026-09-01",
-   "first_seen": "2026-10-06"
-  },
-  {
-   "title": "富源县教育体育局所属部分学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
-   "url": "http://yn.huatu.com/2026/0928/2010626.html",
-   "source": "华图教育",
-   "region": "曲靖",
-   "region_detail": "富源县",
-   "published": "2026-09-01",
-   "first_seen": "2026-10-06"
-  },
-  {
-   "title": "曲靖经济技术开发区管委会所属学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
-   "url": "http://yn.huatu.com/2026/0924/2010608.html",
-   "source": "华图教育",
-   "region": "曲靖",
-   "region_detail": "",
-   "published": "2026-09-01",
-   "first_seen": "2026-10-06"
-  },
-  {
-   "title": "曲靖经济技术开发区托管学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
-   "url": "http://yn.huatu.com/2026/0924/2010607.html",
-   "source": "华图教育",
-   "region": "曲靖",
-   "region_detail": "",
-   "published": "2026-09-01",
-   "first_seen": "2026-10-06"
-  },
-  {
-   "title": "曲靖市第一中学公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
-   "url": "http://yn.huatu.com/2026/0924/2010604.html",
-   "source": "华图教育",
-   "region": "曲靖",
-   "region_detail": "",
-   "published": "2026-09-01",
-   "first_seen": "2026-10-06"
-  },
-  {
-   "title": "云南省曲靖市民族中学公开引进2026年教育人才专项体检、考察结果及拟录（聘）人员公示",
-   "url": "http://yn.huatu.com/2026/0924/2010603.html",
-   "source": "华图教育",
-   "region": "曲靖",
-   "region_detail": "",
-   "published": "2026-09-01",
-   "first_seen": "2026-10-06"
+   "first_seen": "2026-10-07"
   },
   {
    "title": "曲靖市沾益区教育体育局2026年公开招聘教育",
@@ -599,7 +554,52 @@
    "region": "曲靖",
    "region_detail": "会泽县",
    "published": "2026-09-01",
-   "first_seen": "2026-10-06"
+   "first_seen": "2026-10-07"
+  },
+  {
+   "title": "富源县教育体育局所属部分学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
+   "url": "http://yn.huatu.com/2026/0928/2010626.html",
+   "source": "华图教育",
+   "region": "曲靖",
+   "region_detail": "富源县",
+   "published": "2026-09-01",
+   "first_seen": "2026-10-07"
+  },
+  {
+   "title": "曲靖经济技术开发区管委会所属学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
+   "url": "http://yn.huatu.com/2026/0924/2010608.html",
+   "source": "华图教育",
+   "region": "曲靖",
+   "region_detail": "",
+   "published": "2026-09-01",
+   "first_seen": "2026-10-07"
+  },
+  {
+   "title": "曲靖经济技术开发区托管学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
+   "url": "http://yn.huatu.com/2026/0924/2010607.html",
+   "source": "华图教育",
+   "region": "曲靖",
+   "region_detail": "",
+   "published": "2026-09-01",
+   "first_seen": "2026-10-07"
+  },
+  {
+   "title": "曲靖市第一中学公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
+   "url": "http://yn.huatu.com/2026/0924/2010604.html",
+   "source": "华图教育",
+   "region": "曲靖",
+   "region_detail": "",
+   "published": "2026-09-01",
+   "first_seen": "2026-10-07"
+  },
+  {
+   "title": "云南省曲靖市民族中学公开引进2026年教育人才专项体检、考察结果及拟录（聘）人员公示",
+   "url": "http://yn.huatu.com/2026/0924/2010603.html",
+   "source": "华图教育",
+   "region": "曲靖",
+   "region_detail": "",
+   "published": "2026-09-01",
+   "first_seen": "2026-10-07"
   },
   {
    "title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告",
