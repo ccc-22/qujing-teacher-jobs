@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08 06:52",
+ "generated_at": "2026-10-08 12:01",
  "generated_date": "2026-10-08",
  "sources": [
   {
@@ -24,7 +24,7 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 60
+   "found": 61
   },
   {
    "name": "华图教育",
@@ -84,11 +84,11 @@
    "name": "华图教师云南",
    "ok": true,
    "pages_ok": 1,
-   "found": 40
+   "found": 39
   }
  ],
  "total_candidates": 241,
- "excluded": 185,
+ "excluded": 183,
  "jobs": [
   {
    "id": "4a48efadfee8",
@@ -184,6 +184,44 @@
    "published": "2026-10-04",
    "first_seen": "2026-10-04",
    "is_new": false
+  },
+  {
+   "id": "675fc632e496",
+   "title": "云南老年大学2026年兼职教师招募公告2026-10-0815:40[招聘公告]",
+   "url": "https://m.yn.huatu.com/2026/1008/2010937.html",
+   "origin_url": "https://mp.weixin.qq.com/s/VM_HGqw9-my0C4iIq7yECQ",
+   "source": "云南华图",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "check",
+   "age": "≤60周岁",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-10-01",
+   "first_seen": "2026-10-08",
+   "is_new": true
+  },
+  {
+   "id": "7c6a8be8bd35",
+   "title": "云南省云天化中学2026年秋季学期教师招聘公告2026-10-0813:50[招聘公告]",
+   "url": "https://m.yn.huatu.com/2026/1008/2010934.html",
+   "origin_url": "",
+   "source": "云南华图",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_maybe",
+   "bianzhi": "check",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-10-01",
+   "first_seen": "2026-10-08",
+   "is_new": true
   },
   {
    "id": "564961811bd2",
@@ -567,15 +605,6 @@
   }
  ],
  "process": [
-  {
-   "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
-   "source": "贵州华图",
-   "region": "贵州其他",
-   "region_detail": "",
-   "published": "2026-10-01",
-   "first_seen": "2026-10-07"
-  },
   {
    "title": "昆明医科大学关于2026年公开招聘编制外教学科研工作人员第一批拟聘用人员的公示",
    "url": "http://yn.huatu.com/2026/0929/2010794.html",
