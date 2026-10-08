@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-08 12:01",
+ "generated_at": "2026-10-08 16:14",
  "generated_date": "2026-10-08",
  "sources": [
   {
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 241,
- "excluded": 183,
+ "excluded": 185,
  "jobs": [
   {
    "id": "4a48efadfee8",
