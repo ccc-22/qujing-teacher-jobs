@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-08 16:14",
- "generated_date": "2026-10-08",
+ "generated_at": "2026-10-09 06:50",
+ "generated_date": "2026-10-09",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -16,9 +16,9 @@
   },
   {
    "name": "云南省人社厅",
-   "ok": false,
-   "pages_ok": 0,
-   "found": 0
+   "ok": true,
+   "pages_ok": 4,
+   "found": 22
   },
   {
    "name": "华图教育",
@@ -87,8 +87,8 @@
    "found": 39
   }
  ],
- "total_candidates": 241,
- "excluded": 185,
+ "total_candidates": 264,
+ "excluded": 202,
  "jobs": [
   {
    "id": "4a48efadfee8",
@@ -167,6 +167,25 @@
    "is_new": false
   },
   {
+   "id": "06f4b723b1e7",
+   "title": "2026年下半年云南省交通运输厅所属事业单位公开招聘人员公告",
+   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65842&ClassID=602",
+   "origin_url": "",
+   "source": "云南省人社厅",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "事业编统考",
+   "english": true,
+   "subject_class": "english_clear",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-10-09",
+   "first_seen": "2026-10-09",
+   "is_new": true
+  },
+  {
    "id": "c5c8e818a49f",
    "title": "2026年下半年云南省数据局所属事业单位公开招聘人员公告",
    "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65839&ClassID=602",
@@ -186,6 +205,25 @@
    "is_new": false
   },
   {
+   "id": "8759a7ce75f2",
+   "title": "云南省云天化中学2026年公开招聘优秀教育人才公告(若干)",
+   "url": "http://yn.huatu.com/2026/1009/2010984.html",
+   "origin_url": "https://mp.weixin.qq.com/s/FQyIFh8sR6QStSgVgoIELQ?scene=1",
+   "source": "华图教育",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_maybe",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-10-01",
+   "first_seen": "2026-10-09",
+   "is_new": true
+  },
+  {
    "id": "675fc632e496",
    "title": "云南老年大学2026年兼职教师招募公告2026-10-0815:40[招聘公告]",
    "url": "https://m.yn.huatu.com/2026/1008/2010937.html",
@@ -202,7 +240,7 @@
    "deadline": null,
    "published": "2026-10-01",
    "first_seen": "2026-10-08",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "7c6a8be8bd35",
@@ -221,7 +259,7 @@
    "deadline": null,
    "published": "2026-10-01",
    "first_seen": "2026-10-08",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "564961811bd2",
@@ -259,7 +297,7 @@
    "deadline": null,
    "published": "2026-10-01",
    "first_seen": "2026-10-08",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "350d4ddd5169",
@@ -612,7 +650,7 @@
    "region": "昆明",
    "region_detail": "",
    "published": "2026-09-01",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
   },
   {
    "title": "曲靖市沾益区教育体育局2026年公开招聘教育",
@@ -630,7 +668,7 @@
    "region": "曲靖",
    "region_detail": "会泽县",
    "published": "2026-09-01",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
   },
   {
    "title": "富源县教育体育局所属部分学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
@@ -639,7 +677,7 @@
    "region": "曲靖",
    "region_detail": "富源县",
    "published": "2026-09-01",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
   },
   {
    "title": "曲靖经济技术开发区管委会所属学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
@@ -648,7 +686,7 @@
    "region": "曲靖",
    "region_detail": "",
    "published": "2026-09-01",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
   },
   {
    "title": "曲靖经济技术开发区托管学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
@@ -657,7 +695,7 @@
    "region": "曲靖",
    "region_detail": "",
    "published": "2026-09-01",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
   },
   {
    "title": "曲靖市第一中学公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
@@ -666,7 +704,7 @@
    "region": "曲靖",
    "region_detail": "",
    "published": "2026-09-01",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
   },
   {
    "title": "云南省曲靖市民族中学公开引进2026年教育人才专项体检、考察结果及拟录（聘）人员公示",
@@ -675,7 +713,7 @@
    "region": "曲靖",
    "region_detail": "",
    "published": "2026-09-01",
-   "first_seen": "2026-10-08"
+   "first_seen": "2026-10-09"
   },
   {
    "title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告",
