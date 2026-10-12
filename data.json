@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-12 06:38",
+ "generated_at": "2026-10-12 12:43",
  "generated_date": "2026-10-12",
  "sources": [
   {
@@ -48,13 +48,13 @@
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 29
+   "found": 30
   },
   {
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 29
+   "found": 30
   },
   {
    "name": "红河人才网",
@@ -87,8 +87,8 @@
    "found": 38
   }
  ],
- "total_candidates": 261,
- "excluded": 200,
+ "total_candidates": 262,
+ "excluded": 201,
  "jobs": [
   {
    "id": "7754bba5495a",
@@ -279,6 +279,25 @@
    "published": "2026-10-01",
    "first_seen": "2026-10-08",
    "is_new": false
+  },
+  {
+   "id": "b4dca61aaf58",
+   "title": "贵州建设职业技术学院2026年引进高层次人才公告2026-10-1215:01[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1012/2037268.html",
+   "origin_url": "",
+   "source": "贵州华图",
+   "region": "贵州其他",
+   "region_detail": "",
+   "jtype": "人才引进",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "yes",
+   "age": "≤45周岁",
+   "headcount": 9,
+   "deadline": null,
+   "published": "2026-10-01",
+   "first_seen": "2026-10-12",
+   "is_new": true
   },
   {
    "id": "c43e8b317ae7",
@@ -719,15 +738,6 @@
   }
  ],
  "process": [
-  {
-   "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
-   "source": "贵州华图",
-   "region": "贵州其他",
-   "region_detail": "",
-   "published": "2026-10-01",
-   "first_seen": "2026-10-07"
-  },
   {
    "title": "曲靖市沾益区教育体育局2026年公开招聘教育",
    "url": "http://yn.huatu.com/2026/0911/2008975.html",
