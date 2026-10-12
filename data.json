@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-10-11 15:23",
- "generated_date": "2026-10-11",
+ "generated_at": "2026-10-12 06:38",
+ "generated_date": "2026-10-12",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -18,7 +18,7 @@
    "name": "云南省人社厅",
    "ok": true,
    "pages_ok": 4,
-   "found": 24
+   "found": 23
   },
   {
    "name": "华图教育",
@@ -87,9 +87,28 @@
    "found": 38
   }
  ],
- "total_candidates": 262,
- "excluded": 201,
+ "total_candidates": 261,
+ "excluded": 200,
  "jobs": [
+  {
+   "id": "7754bba5495a",
+   "title": "六盘水市钟山区2026年银龄讲学计划教师招募公告2026-10-1210:51[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1012/2037258.html",
+   "origin_url": "",
+   "source": "贵州华图",
+   "region": "贵州邻近",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "check",
+   "age": "",
+   "headcount": null,
+   "deadline": "2026-10-14",
+   "published": "2026-10-01",
+   "first_seen": "2026-10-12",
+   "is_new": true
+  },
   {
    "id": "7c5d43930eaf",
    "title": "2026年下半年云南省交通运输厅所属事业单位公开招聘高层次和急需紧缺专业技术人才...",
@@ -725,7 +744,7 @@
    "region": "曲靖",
    "region_detail": "会泽县",
    "published": "2026-09-01",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-12"
   },
   {
    "title": "富源县教育体育局所属部分学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
@@ -734,7 +753,7 @@
    "region": "曲靖",
    "region_detail": "富源县",
    "published": "2026-09-01",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-12"
   },
   {
    "title": "曲靖经济技术开发区管委会所属学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
@@ -743,7 +762,7 @@
    "region": "曲靖",
    "region_detail": "",
    "published": "2026-09-01",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-12"
   },
   {
    "title": "曲靖经济技术开发区托管学校公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
@@ -752,7 +771,7 @@
    "region": "曲靖",
    "region_detail": "",
    "published": "2026-09-01",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-12"
   },
   {
    "title": "曲靖市第一中学公开引进2026年教育人才专项体检、考察结果及拟录(聘)人员公示",
@@ -761,7 +780,7 @@
    "region": "曲靖",
    "region_detail": "",
    "published": "2026-09-01",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-12"
   },
   {
    "title": "云南省曲靖市民族中学公开引进2026年教育人才专项体检、考察结果及拟录（聘）人员公示",
@@ -770,7 +789,7 @@
    "region": "曲靖",
    "region_detail": "",
    "published": "2026-09-01",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-12"
   },
   {
    "title": "昆明医科大学关于2026年公开招聘编制外教学科研工作人员第一批拟聘用人员的公示",
@@ -779,7 +798,7 @@
    "region": "昆明",
    "region_detail": "",
    "published": "2026-09-01",
-   "first_seen": "2026-10-11"
+   "first_seen": "2026-10-12"
   },
   {
    "title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告",
