@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-14 05:31",
+ "generated_at": "2026-10-14 10:01",
  "generated_date": "2026-10-14",
  "sources": [
   {
@@ -48,13 +48,13 @@
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 30
+   "found": 31
   },
   {
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 30
+   "found": 31
   },
   {
    "name": "红河人才网",
@@ -87,8 +87,8 @@
    "found": 38
   }
  ],
- "total_candidates": 262,
- "excluded": 200,
+ "total_candidates": 263,
+ "excluded": 199,
  "jobs": [
   {
    "id": "7754bba5495a",
@@ -108,6 +108,25 @@
    "published": "2026-10-01",
    "first_seen": "2026-10-12",
    "is_new": false
+  },
+  {
+   "id": "aa08cb73a05f",
+   "title": "云南师范大学附属绥江中学2026年公开招聘公告",
+   "url": "http://yn.huatu.com/2026/1014/2011243.html",
+   "origin_url": "https://mp.weixin.qq.com/s/ZX3cSAoogEU_f8_nkN4MaQ?scene=1",
+   "source": "华图教育",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": null,
+   "deadline": "2026-10-25",
+   "published": "2026-10-01",
+   "first_seen": "2026-10-14",
+   "is_new": true
   },
   {
    "id": "7c5d43930eaf",
@@ -222,6 +241,25 @@
    "published": "2026-10-04",
    "first_seen": "2026-10-04",
    "is_new": false
+  },
+  {
+   "id": "f64e3e8bdbf8",
+   "title": "昆明市海贝高中2026年度公开招聘优秀教育人才公告(若干人)",
+   "url": "http://yn.huatu.com/2026/1014/2011245.html",
+   "origin_url": "https://mp.weixin.qq.com/s/y1NQ5bdkWafP3Ml2etH9iw?scene=1",
+   "source": "华图教育",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_maybe",
+   "bianzhi": "yes",
+   "age": "≤38周岁",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-10-01",
+   "first_seen": "2026-10-14",
+   "is_new": true
   },
   {
    "id": "a2086a50dcb5",
@@ -758,13 +796,13 @@
  ],
  "process": [
   {
-   "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
+   "title": "安顺西秀区东屯学校招聘临聘教师公告2026-10-1416:13[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1014/2037455.html",
    "source": "贵州华图",
    "region": "贵州其他",
    "region_detail": "",
    "published": "2026-10-01",
-   "first_seen": "2026-10-07"
+   "first_seen": "2026-10-14"
   },
   {
    "title": "曲靖市沾益区教育体育局2026年公开招聘教育",
