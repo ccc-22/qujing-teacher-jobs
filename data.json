@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-17 09:05",
+ "generated_at": "2026-10-17 12:40",
  "generated_date": "2026-10-17",
  "sources": [
   {
@@ -24,7 +24,7 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 61
+   "found": 62
   },
   {
    "name": "华图教育",
@@ -87,8 +87,8 @@
    "found": 38
   }
  ],
- "total_candidates": 266,
- "excluded": 204,
+ "total_candidates": 267,
+ "excluded": 205,
  "jobs": [
   {
    "id": "aa08cb73a05f",
@@ -203,6 +203,25 @@
    "published": "2026-10-04",
    "first_seen": "2026-10-04",
    "is_new": false
+  },
+  {
+   "id": "1a454a8b28cc",
+   "title": "云南民族大学附属中学西山分校2027级教师招聘公告(50人)",
+   "url": "http://yn.huatu.com/2026/1017/2011487.html",
+   "origin_url": "https://mp.weixin.qq.com/s/IjoQ0KXPpQFYTLKKKqr6RQ",
+   "source": "华图教育",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_maybe",
+   "bianzhi": "yes",
+   "age": "≤30周岁",
+   "headcount": 50,
+   "deadline": null,
+   "published": "2026-10-01",
+   "first_seen": "2026-10-17",
+   "is_new": true
   },
   {
    "id": "a68c925a8450",
@@ -757,15 +776,6 @@
   }
  ],
  "process": [
-  {
-   "title": "安顺西秀区东屯学校招聘临聘教师公告2026-10-1416:13[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/1014/2037455.html",
-   "source": "贵州华图",
-   "region": "贵州其他",
-   "region_detail": "",
-   "published": "2026-10-01",
-   "first_seen": "2026-10-14"
-  },
   {
    "title": "曲靖市沾益区教育体育局2026年公开招聘教育",
    "url": "http://yn.huatu.com/2026/0911/2008975.html",
