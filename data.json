@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-22 05:29",
+ "generated_at": "2026-10-22 09:55",
  "generated_date": "2026-10-22",
  "sources": [
   {
@@ -48,13 +48,13 @@
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 35
+   "found": 36
   },
   {
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 35
+   "found": 36
   },
   {
    "name": "红河人才网",
@@ -87,8 +87,8 @@
    "found": 38
   }
  ],
- "total_candidates": 266,
- "excluded": 202,
+ "total_candidates": 267,
+ "excluded": 204,
  "jobs": [
   {
    "id": "aa08cb73a05f",
