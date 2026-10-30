@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-30 06:29",
+ "generated_at": "2026-10-30 11:22",
  "generated_date": "2026-10-30",
  "sources": [
   {
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 262,
- "excluded": 202,
+ "excluded": 199,
  "jobs": [
   {
    "id": "7c5d43930eaf",
@@ -186,11 +186,11 @@
    "is_new": false
   },
   {
-   "id": "ad9cdfb74cb3",
-   "title": "昆明市盘龙区师大实验昆明湖中学2026年招聘公告(2人)",
-   "url": "http://yn.huatu.com/2026/1030/2013108.html",
+   "id": "6f197ccaa5db",
+   "title": "昆明市盘龙区师大实验昆明湖中学2026年招聘公告(2人)2026-10-3011:45[招聘公告]",
+   "url": "https://m.yn.huatu.com/2026/1030/2013108.html",
    "origin_url": "https://mp.weixin.qq.com/s/npNsDVpIFMZU3mHyQ4NMNQ?scene=1",
-   "source": "华图教育",
+   "source": "云南华图",
    "region": "昆明",
    "region_detail": "",
    "jtype": "教师招聘",
@@ -198,7 +198,7 @@
    "subject_class": "english_maybe",
    "bianzhi": "yes",
    "age": "",
-   "headcount": 2,
+   "headcount": null,
    "deadline": null,
    "published": "2026-10-01",
    "first_seen": "2026-10-30",
@@ -795,6 +795,24 @@
   }
  ],
  "process": [
+  {
+   "title": "安顺西秀区东屯学校招聘临聘教师公告2026-10-1416:13[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1014/2037455.html",
+   "source": "贵州华图",
+   "region": "贵州其他",
+   "region_detail": "",
+   "published": "2026-10-01",
+   "first_seen": "2026-10-14"
+  },
+  {
+   "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
+   "source": "贵州华图",
+   "region": "贵州其他",
+   "region_detail": "",
+   "published": "2026-10-01",
+   "first_seen": "2026-10-07"
+  },
   {
    "title": "曲靖市沾益区教育体育局2026年公开招聘教育",
    "url": "http://yn.huatu.com/2026/0911/2008975.html",
