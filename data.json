@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02 06:55",
+ "generated_at": "2026-11-02 13:08",
  "generated_date": "2026-11-02",
  "sources": [
   {
@@ -48,13 +48,13 @@
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 36
+   "found": 35
   },
   {
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 36
+   "found": 35
   },
   {
    "name": "红河人才网",
@@ -87,8 +87,8 @@
    "found": 37
   }
  ],
- "total_candidates": 246,
- "excluded": 190,
+ "total_candidates": 245,
+ "excluded": 188,
  "jobs": [
   {
    "id": "7c5d43930eaf",
@@ -108,6 +108,25 @@
    "published": "2026-09-03",
    "first_seen": "2026-09-03",
    "is_new": false
+  },
+  {
+   "id": "40ccd5fdb5a4",
+   "title": "2026年昆明市西山区海青外国语实验学校高中部教师招聘公告(数名)2026-11-0217:39[招聘公告]",
+   "url": "https://m.yn.huatu.com/2026/1102/2013244.html",
+   "origin_url": "https://mp.weixin.qq.com/s/0ut_huv1IANEcxgfntgo_g",
+   "source": "云南华图",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_maybe",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-11-01",
+   "first_seen": "2026-11-02",
+   "is_new": true
   },
   {
    "id": "fb878e08e754",
@@ -529,15 +548,6 @@
   }
  ],
  "process": [
-  {
-   "title": "安顺西秀区东屯学校招聘临聘教师公告2026-10-1416:13[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/1014/2037455.html",
-   "source": "贵州华图",
-   "region": "贵州其他",
-   "region_detail": "",
-   "published": "2026-10-01",
-   "first_seen": "2026-10-14"
-  },
   {
    "title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告",
    "url": "http://yn.huatu.com/2025/0704/1959074.html",
