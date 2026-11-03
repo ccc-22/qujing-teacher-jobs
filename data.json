@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-02 19:01",
- "generated_date": "2026-11-02",
+ "generated_at": "2026-11-03 07:23",
+ "generated_date": "2026-11-03",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -88,27 +88,8 @@
   }
  ],
  "total_candidates": 245,
- "excluded": 187,
+ "excluded": 185,
  "jobs": [
-  {
-   "id": "7c5d43930eaf",
-   "title": "2026年下半年云南省交通运输厅所属事业单位公开招聘高层次和急需紧缺专业技术人才...",
-   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65843&ClassID=602",
-   "origin_url": "https://www.puershi.gov.cn/zwgk/zfxxgk2/zfbmxxgk/pesrlzyshbzj/zfxxgkzn.htm",
-   "source": "云南省人社厅",
-   "region": "云南其他",
-   "region_detail": "",
-   "jtype": "事业编统考",
-   "english": false,
-   "subject_class": "general",
-   "bianzhi": "yes",
-   "age": "≤18周岁",
-   "headcount": null,
-   "deadline": "2026-12-31",
-   "published": "2026-09-03",
-   "first_seen": "2026-09-03",
-   "is_new": false
-  },
   {
    "id": "40ccd5fdb5a4",
    "title": "2026年昆明市西山区海青外国语实验学校高中部教师招聘公告(数名)2026-11-0217:39[招聘公告]",
@@ -126,6 +107,25 @@
    "deadline": null,
    "published": "2026-11-01",
    "first_seen": "2026-11-02",
+   "is_new": false
+  },
+  {
+   "id": "395c5e933d8d",
+   "title": "2026年云南昆明市西山区海青外国语实验学校高中部教师招聘公告（34名）2026-11-0313:33:20147人",
+   "url": "https://m.huatu.com/jiaoshi/2026/1103/2876719.html",
+   "origin_url": "",
+   "source": "华图教师云南",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": 147,
+   "deadline": null,
+   "published": "2026-11-01",
+   "first_seen": "2026-11-03",
    "is_new": true
   },
   {
@@ -548,6 +548,15 @@
   }
  ],
  "process": [
+  {
+   "title": "安顺西秀区东屯学校招聘临聘教师公告2026-10-1416:13[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1014/2037455.html",
+   "source": "贵州华图",
+   "region": "贵州其他",
+   "region_detail": "",
+   "published": "2026-10-01",
+   "first_seen": "2026-10-14"
+  },
   {
    "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
    "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
