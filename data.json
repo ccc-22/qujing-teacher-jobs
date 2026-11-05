@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05 07:26",
+ "generated_at": "2026-11-05 13:00",
  "generated_date": "2026-11-05",
  "sources": [
   {
@@ -34,9 +34,9 @@
   },
   {
    "name": "山香教育",
-   "ok": true,
-   "pages_ok": 1,
-   "found": 19
+   "ok": false,
+   "pages_ok": 0,
+   "found": 0
   },
   {
    "name": "山香教育",
@@ -48,13 +48,13 @@
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 34
+   "found": 35
   },
   {
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 34
+   "found": 35
   },
   {
    "name": "红河人才网",
@@ -87,8 +87,8 @@
    "found": 37
   }
  ],
- "total_candidates": 243,
- "excluded": 183,
+ "total_candidates": 225,
+ "excluded": 165,
  "jobs": [
   {
    "id": "77eb88d4322d",
@@ -568,13 +568,13 @@
  ],
  "process": [
   {
-   "title": "贵州警察学院2026年高层次人才引进(第二批)公告2026-11-0317:25[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/1103/2038897.html",
+   "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
    "source": "贵州华图",
    "region": "贵州其他",
    "region_detail": "",
-   "published": "2026-11-01",
-   "first_seen": "2026-11-04"
+   "published": "2026-10-01",
+   "first_seen": "2026-10-07"
   },
   {
    "title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告",
