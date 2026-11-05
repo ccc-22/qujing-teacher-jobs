@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-04 16:49",
- "generated_date": "2026-11-04",
+ "generated_at": "2026-11-05 07:26",
+ "generated_date": "2026-11-05",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -30,7 +30,7 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 67
+   "found": 65
   },
   {
    "name": "山香教育",
@@ -87,7 +87,7 @@
    "found": 37
   }
  ],
- "total_candidates": 244,
+ "total_candidates": 243,
  "excluded": 183,
  "jobs": [
   {
@@ -107,7 +107,7 @@
    "deadline": null,
    "published": "2026-11-01",
    "first_seen": "2026-11-04",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "40ccd5fdb5a4",
@@ -568,13 +568,13 @@
  ],
  "process": [
   {
-   "title": "安顺西秀区东屯学校招聘临聘教师公告2026-10-1416:13[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/1014/2037455.html",
+   "title": "贵州警察学院2026年高层次人才引进(第二批)公告2026-11-0317:25[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1103/2038897.html",
    "source": "贵州华图",
    "region": "贵州其他",
    "region_detail": "",
-   "published": "2026-10-01",
-   "first_seen": "2026-10-14"
+   "published": "2026-11-01",
+   "first_seen": "2026-11-04"
   },
   {
    "title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告",
