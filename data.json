@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05 13:00",
+ "generated_at": "2026-11-05 17:01",
  "generated_date": "2026-11-05",
  "sources": [
   {
@@ -34,9 +34,9 @@
   },
   {
    "name": "山香教育",
-   "ok": false,
-   "pages_ok": 0,
-   "found": 0
+   "ok": true,
+   "pages_ok": 1,
+   "found": 19
   },
   {
    "name": "山香教育",
@@ -87,8 +87,8 @@
    "found": 37
   }
  ],
- "total_candidates": 225,
- "excluded": 165,
+ "total_candidates": 244,
+ "excluded": 184,
  "jobs": [
   {
    "id": "77eb88d4322d",
