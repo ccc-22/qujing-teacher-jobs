@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-06 07:26",
+ "generated_at": "2026-11-06 12:42",
  "generated_date": "2026-11-06",
  "sources": [
   {
@@ -30,7 +30,7 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 65
+   "found": 64
   },
   {
    "name": "山香教育",
@@ -72,7 +72,7 @@
    "name": "云南华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 37
+   "found": 38
   },
   {
    "name": "云南中公教育",
@@ -84,11 +84,11 @@
    "name": "华图教师云南",
    "ok": true,
    "pages_ok": 1,
-   "found": 37
+   "found": 38
   }
  ],
- "total_candidates": 244,
- "excluded": 185,
+ "total_candidates": 245,
+ "excluded": 187,
  "jobs": [
   {
    "id": "77eb88d4322d",
