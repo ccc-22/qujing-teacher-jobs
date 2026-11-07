@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07 06:38",
+ "generated_at": "2026-11-07 11:36",
  "generated_date": "2026-11-07",
  "sources": [
   {
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 245,
- "excluded": 187,
+ "excluded": 186,
  "jobs": [
   {
    "id": "77eb88d4322d",
@@ -127,6 +127,25 @@
    "published": "2026-11-01",
    "first_seen": "2026-11-02",
    "is_new": false
+  },
+  {
+   "id": "4c458b5d013c",
+   "title": "贵阳市永胜学校高中语文、英语教师招聘公告2026-11-0716:11[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1107/2039150.html",
+   "origin_url": "",
+   "source": "贵州华图",
+   "region": "贵州其他",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_clear",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-11-01",
+   "first_seen": "2026-11-07",
+   "is_new": true
   },
   {
    "id": "395c5e933d8d",
@@ -567,6 +586,15 @@
   }
  ],
  "process": [
+  {
+   "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
+   "source": "贵州华图",
+   "region": "贵州其他",
+   "region_detail": "",
+   "published": "2026-10-01",
+   "first_seen": "2026-10-07"
+  },
   {
    "title": "2025年云南省特岗教师招聘考试（笔试）部分科目使用专用答题卡通告",
    "url": "http://yn.huatu.com/2025/0704/1959074.html",
