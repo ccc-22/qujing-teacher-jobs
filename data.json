@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12 07:49",
+ "generated_at": "2026-11-12 13:27",
  "generated_date": "2026-11-12",
  "sources": [
   {
@@ -48,13 +48,13 @@
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 34
+   "found": 32
   },
   {
    "name": "贵州华图",
    "ok": true,
    "pages_ok": 1,
-   "found": 34
+   "found": 32
   },
   {
    "name": "红河人才网",
@@ -87,7 +87,7 @@
    "found": 39
   }
  ],
- "total_candidates": 246,
+ "total_candidates": 244,
  "excluded": 191,
  "jobs": [
   {
@@ -433,25 +433,6 @@
    "is_new": false
   },
   {
-   "id": "4847c798e777",
-   "title": "盘州市翰林街道华屯幼儿园2026年秋季学期招聘教师公告2026-10-0715:16[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/1007/2036968.html",
-   "origin_url": "",
-   "source": "贵州华图",
-   "region": "贵州邻近",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": true,
-   "subject_class": "english_maybe",
-   "bianzhi": "check",
-   "age": "",
-   "headcount": 1,
-   "deadline": null,
-   "published": "2026-10-01",
-   "first_seen": "2026-10-08",
-   "is_new": false
-  },
-  {
    "id": "72bee1a6b647",
    "title": "教育部办公厅财政部办公厅关于做好2026年“三区”人才支持计划教师专项计划(云南578人)2026-10-0914:04[招聘公告]",
    "url": "https://m.yn.huatu.com/2026/1009/2010991.html",
@@ -487,6 +468,25 @@
    "deadline": null,
    "published": "2026-10-01",
    "first_seen": "2026-10-28",
+   "is_new": false
+  },
+  {
+   "id": "4847c798e777",
+   "title": "盘州市翰林街道华屯幼儿园2026年秋季学期招聘教师公告2026-10-0715:16[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1007/2036968.html",
+   "origin_url": "",
+   "source": "贵州华图",
+   "region": "贵州邻近",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_maybe",
+   "bianzhi": "check",
+   "age": "",
+   "headcount": 1,
+   "deadline": null,
+   "published": "2026-10-01",
+   "first_seen": "2026-10-08",
    "is_new": false
   },
   {
