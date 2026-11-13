@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-12 17:19",
- "generated_date": "2026-11-12",
+ "generated_at": "2026-11-13 07:21",
+ "generated_date": "2026-11-13",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -88,8 +88,27 @@
   }
  ],
  "total_candidates": 244,
- "excluded": 191,
+ "excluded": 189,
  "jobs": [
+  {
+   "id": "37c17d408d27",
+   "title": "红河州蒙自华清中学2026年招聘公告(5人)",
+   "url": "http://yn.huatu.com/2026/1113/2014515.html",
+   "origin_url": "https://mp.weixin.qq.com/s/jp2NrR3LJnDRpI5h6RpXzQ",
+   "source": "华图教育",
+   "region": "红河",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_maybe",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": 5,
+   "deadline": null,
+   "published": "2026-11-01",
+   "first_seen": "2026-11-13",
+   "is_new": true
+  },
   {
    "id": "77eb88d4322d",
    "title": "红河蒙自华清中学2026年招聘公告(4人)2026-11-0417:20[招聘公告]",
@@ -586,6 +605,15 @@
   }
  ],
  "process": [
+  {
+   "title": "贵州警察学院2026年高层次人才引进(第二批)公告2026-11-0317:25[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1103/2038897.html",
+   "source": "贵州华图",
+   "region": "贵州其他",
+   "region_detail": "",
+   "published": "2026-11-01",
+   "first_seen": "2026-11-04"
+  },
   {
    "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
    "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
