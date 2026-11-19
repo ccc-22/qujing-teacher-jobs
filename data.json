@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19 14:06",
+ "generated_at": "2026-11-19 17:54",
  "generated_date": "2026-11-19",
  "sources": [
   {
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 247,
- "excluded": 192,
+ "excluded": 193,
  "jobs": [
   {
    "id": "273c7f512b45",
