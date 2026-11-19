@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-18 17:49",
- "generated_date": "2026-11-18",
+ "generated_at": "2026-11-19 08:05",
+ "generated_date": "2026-11-19",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -24,7 +24,7 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 63
+   "found": 64
   },
   {
    "name": "华图教育",
@@ -87,8 +87,8 @@
    "found": 39
   }
  ],
- "total_candidates": 246,
- "excluded": 189,
+ "total_candidates": 247,
+ "excluded": 190,
  "jobs": [
   {
    "id": "273c7f512b45",
@@ -602,25 +602,6 @@
    "published": "2026-09-22",
    "first_seen": "2026-09-22",
    "is_new": false
-  },
-  {
-   "id": "9b63ed5e45f7",
-   "title": "2026年下半年云南省生态环境厅所属事业单位公开招聘人员公告",
-   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65809&ClassID=602",
-   "origin_url": "",
-   "source": "云南省人社厅",
-   "region": "云南其他",
-   "region_detail": "",
-   "jtype": "事业编统考",
-   "english": false,
-   "subject_class": "general",
-   "bianzhi": "yes",
-   "age": "",
-   "headcount": null,
-   "deadline": null,
-   "published": "2026-09-19",
-   "first_seen": "2026-09-19",
-   "is_new": false
   }
  ],
  "process": [
@@ -649,7 +630,7 @@
    "region": "云南其他",
    "region_detail": "",
    "published": "2025-07-01",
-   "first_seen": "2026-11-18"
+   "first_seen": "2026-11-19"
   }
  ]
 }
