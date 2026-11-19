@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19 08:05",
+ "generated_at": "2026-11-19 14:06",
  "generated_date": "2026-11-19",
  "sources": [
   {
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 247,
- "excluded": 190,
+ "excluded": 192,
  "jobs": [
   {
    "id": "273c7f512b45",
@@ -452,25 +452,6 @@
    "is_new": false
   },
   {
-   "id": "564961811bd2",
-   "title": "招聘公告】盘州市第十幼儿园专任教师招聘公告2026-10-0717:30[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/1007/2036971.html",
-   "origin_url": "",
-   "source": "贵州华图",
-   "region": "贵州邻近",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": true,
-   "subject_class": "english_maybe",
-   "bianzhi": "check",
-   "age": "",
-   "headcount": null,
-   "deadline": null,
-   "published": "2026-10-01",
-   "first_seen": "2026-10-07",
-   "is_new": false
-  },
-  {
    "id": "72bee1a6b647",
    "title": "教育部办公厅财政部办公厅关于做好2026年“三区”人才支持计划教师专项计划(云南578人)2026-10-0914:04[招聘公告]",
    "url": "https://m.yn.huatu.com/2026/1009/2010991.html",
@@ -506,6 +487,25 @@
    "deadline": null,
    "published": "2026-10-01",
    "first_seen": "2026-10-28",
+   "is_new": false
+  },
+  {
+   "id": "564961811bd2",
+   "title": "招聘公告】盘州市第十幼儿园专任教师招聘公告2026-10-0717:30[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1007/2036971.html",
+   "origin_url": "",
+   "source": "贵州华图",
+   "region": "贵州邻近",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": true,
+   "subject_class": "english_maybe",
+   "bianzhi": "check",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-10-01",
+   "first_seen": "2026-10-07",
    "is_new": false
   },
   {
@@ -605,15 +605,6 @@
   }
  ],
  "process": [
-  {
-   "title": "安顺西秀区东屯学校招聘临聘教师公告2026-10-1416:13[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/1014/2037455.html",
-   "source": "贵州华图",
-   "region": "贵州其他",
-   "region_detail": "",
-   "published": "2026-10-01",
-   "first_seen": "2026-10-14"
-  },
   {
    "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
    "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
