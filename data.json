@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20 07:56",
+ "generated_at": "2026-11-20 13:49",
  "generated_date": "2026-11-20",
  "sources": [
   {
@@ -40,8 +40,8 @@
   },
   {
    "name": "山香教育",
-   "ok": false,
-   "pages_ok": 0,
+   "ok": true,
+   "pages_ok": 1,
    "found": 0
   },
   {
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 247,
- "excluded": 192,
+ "excluded": 194,
  "jobs": [
   {
    "id": "273c7f512b45",
@@ -452,25 +452,6 @@
    "is_new": false
   },
   {
-   "id": "72bee1a6b647",
-   "title": "教育部办公厅财政部办公厅关于做好2026年“三区”人才支持计划教师专项计划(云南578人)2026-10-0914:04[招聘公告]",
-   "url": "https://m.yn.huatu.com/2026/1009/2010991.html",
-   "origin_url": "http://www.moe.gov.cn/srcsite/A10/s7151/202609/t20260930_1452742.html",
-   "source": "云南华图",
-   "region": "云南其他",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": false,
-   "subject_class": "teacher_unknown",
-   "bianzhi": "check",
-   "age": "",
-   "headcount": null,
-   "deadline": null,
-   "published": "2026-10-01",
-   "first_seen": "2026-10-09",
-   "is_new": false
-  },
-  {
    "id": "a30a8787b88e",
    "title": "2027云南民族大学附属中学西山分校教师招聘公告（50名）2026-10-2813:09:25128人",
    "url": "https://m.huatu.com/jiaoshi/2026/1028/2876317.html",
@@ -544,6 +525,25 @@
    "deadline": null,
    "published": "2026-10-01",
    "first_seen": "2026-10-08",
+   "is_new": false
+  },
+  {
+   "id": "72bee1a6b647",
+   "title": "教育部办公厅财政部办公厅关于做好2026年“三区”人才支持计划教师专项计划(云南578人)2026-10-0914:04[招聘公告]",
+   "url": "https://m.yn.huatu.com/2026/1009/2010991.html",
+   "origin_url": "http://www.moe.gov.cn/srcsite/A10/s7151/202609/t20260930_1452742.html",
+   "source": "云南华图",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "check",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-10-01",
+   "first_seen": "2026-10-09",
    "is_new": false
   },
   {
