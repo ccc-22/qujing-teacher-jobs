@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-21 16:42",
- "generated_date": "2026-11-21",
+ "generated_at": "2026-11-22 07:34",
+ "generated_date": "2026-11-22",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 247,
- "excluded": 195,
+ "excluded": 194,
  "jobs": [
   {
    "id": "273c7f512b45",
@@ -564,47 +564,18 @@
    "published": "2026-09-25",
    "first_seen": "2026-09-25",
    "is_new": false
-  },
-  {
-   "id": "da4b9df67bb8",
-   "title": "2026年下半年云南技师学院（云南工贸职业技术学院）公开招聘人员公告",
-   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65816&ClassID=602",
-   "origin_url": "",
-   "source": "云南省人社厅",
-   "region": "云南其他",
-   "region_detail": "",
-   "jtype": "教师招聘",
-   "english": true,
-   "subject_class": "english_clear",
-   "bianzhi": "yes",
-   "age": "",
-   "headcount": null,
-   "deadline": null,
-   "published": "2026-09-22",
-   "first_seen": "2026-09-22",
-   "is_new": false
-  },
-  {
-   "id": "c854ed9c6d10",
-   "title": "2026年下半年云南省水利厅部分直属事业单位公开招聘人员公告",
-   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65815&ClassID=602",
-   "origin_url": "",
-   "source": "云南省人社厅",
-   "region": "云南其他",
-   "region_detail": "",
-   "jtype": "事业编统考",
-   "english": false,
-   "subject_class": "general",
-   "bianzhi": "yes",
-   "age": "",
-   "headcount": null,
-   "deadline": null,
-   "published": "2026-09-22",
-   "first_seen": "2026-09-22",
-   "is_new": false
   }
  ],
  "process": [
+  {
+   "title": "安顺西秀区东屯学校招聘临聘教师公告2026-10-1416:13[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1014/2037455.html",
+   "source": "贵州华图",
+   "region": "贵州其他",
+   "region_detail": "",
+   "published": "2026-10-01",
+   "first_seen": "2026-10-14"
+  },
   {
    "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
    "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
@@ -621,7 +592,7 @@
    "region": "云南其他",
    "region_detail": "",
    "published": "2025-07-01",
-   "first_seen": "2026-11-21"
+   "first_seen": "2026-11-22"
   }
  ]
 }
