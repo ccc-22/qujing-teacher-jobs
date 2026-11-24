@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-23 20:50",
- "generated_date": "2026-11-23",
+ "generated_at": "2026-11-24 10:34",
+ "generated_date": "2026-11-24",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -88,8 +88,27 @@
   }
  ],
  "total_candidates": 247,
- "excluded": 195,
+ "excluded": 193,
  "jobs": [
+  {
+   "id": "c4ee1fd72c4b",
+   "title": "昆明树兰高级中学2026年公开招聘公告(若干人)",
+   "url": "http://yn.huatu.com/2026/1124/2015327.html",
+   "origin_url": "https://mp.weixin.qq.com/s/Q3eHUj10AQIWDvIn4h-ZVQ",
+   "source": "华图教育",
+   "region": "昆明",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "yes",
+   "age": "≤35周岁",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-11-01",
+   "first_seen": "2026-11-24",
+   "is_new": true
+  },
   {
    "id": "273c7f512b45",
    "title": "云南民大附属中学西山分校2027级教师招聘公告(50人)2026-11-1716:11[招聘公告]",
@@ -568,6 +587,15 @@
  ],
  "process": [
   {
+   "title": "安顺西秀区东屯学校招聘临聘教师公告2026-10-1416:13[考试公告]",
+   "url": "https://m.gz.huatu.com/2026/1014/2037455.html",
+   "source": "贵州华图",
+   "region": "贵州其他",
+   "region_detail": "",
+   "published": "2026-10-01",
+   "first_seen": "2026-10-14"
+  },
+  {
    "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
    "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
    "source": "贵州华图",
@@ -583,7 +611,7 @@
    "region": "云南其他",
    "region_detail": "",
    "published": "2025-07-01",
-   "first_seen": "2026-11-23"
+   "first_seen": "2026-11-24"
   }
  ]
 }
