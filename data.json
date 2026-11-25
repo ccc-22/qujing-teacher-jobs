@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-25 09:19",
+ "generated_at": "2026-11-25 15:11",
  "generated_date": "2026-11-25",
  "sources": [
   {
@@ -88,20 +88,20 @@
   }
  ],
  "total_candidates": 248,
- "excluded": 193,
+ "excluded": 194,
  "jobs": [
   {
-   "id": "55c7d5686134",
-   "title": "云南省云天化中学2026年最新招聘教师公告(若干人)",
-   "url": "http://yn.huatu.com/2026/1125/2015400.html",
+   "id": "d79ea75e7394",
+   "title": "云南省云天化中学2026年最新招聘教师公告(若干人)2026-11-2515:24[招聘公告]",
+   "url": "https://m.yn.huatu.com/2026/1125/2015400.html",
    "origin_url": "https://mp.weixin.qq.com/s/3Jt5LiooU7L9PPF5_tTk0g?scene=1",
-   "source": "华图教育",
+   "source": "云南华图",
    "region": "云南其他",
    "region_detail": "",
    "jtype": "教师招聘",
    "english": false,
    "subject_class": "teacher_unknown",
-   "bianzhi": "yes",
+   "bianzhi": "check",
    "age": "",
    "headcount": null,
    "deadline": null,
@@ -586,15 +586,6 @@
   }
  ],
  "process": [
-  {
-   "title": "安顺西秀区东屯学校招聘临聘教师公告2026-10-1416:13[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/1014/2037455.html",
-   "source": "贵州华图",
-   "region": "贵州其他",
-   "region_detail": "",
-   "published": "2026-10-01",
-   "first_seen": "2026-10-14"
-  },
   {
    "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
    "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
