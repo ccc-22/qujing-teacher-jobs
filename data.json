@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-24 20:02",
- "generated_date": "2026-11-24",
+ "generated_at": "2026-11-25 09:19",
+ "generated_date": "2026-11-25",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -24,7 +24,7 @@
    "name": "华图教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 64
+   "found": 65
   },
   {
    "name": "华图教育",
@@ -87,9 +87,28 @@
    "found": 39
   }
  ],
- "total_candidates": 247,
+ "total_candidates": 248,
  "excluded": 193,
  "jobs": [
+  {
+   "id": "55c7d5686134",
+   "title": "云南省云天化中学2026年最新招聘教师公告(若干人)",
+   "url": "http://yn.huatu.com/2026/1125/2015400.html",
+   "origin_url": "https://mp.weixin.qq.com/s/3Jt5LiooU7L9PPF5_tTk0g?scene=1",
+   "source": "华图教育",
+   "region": "云南其他",
+   "region_detail": "",
+   "jtype": "教师招聘",
+   "english": false,
+   "subject_class": "teacher_unknown",
+   "bianzhi": "yes",
+   "age": "",
+   "headcount": null,
+   "deadline": null,
+   "published": "2026-11-01",
+   "first_seen": "2026-11-25",
+   "is_new": true
+  },
   {
    "id": "0893617f8b2b",
    "title": "昆明树兰高级中学2026年公开招聘公告(若干人)2026-11-2415:11[招聘公告]",
@@ -107,7 +126,7 @@
    "deadline": null,
    "published": "2026-11-01",
    "first_seen": "2026-11-24",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "273c7f512b45",
@@ -564,25 +583,6 @@
    "published": "2026-10-01",
    "first_seen": "2026-10-09",
    "is_new": false
-  },
-  {
-   "id": "350d4ddd5169",
-   "title": "2026年下半年云南省工业和信息化厅直属事业单位公开招聘人员公告",
-   "url": "https://hrss.yn.gov.cn/NewsView.aspx?NewsID=65833&ClassID=602",
-   "origin_url": "",
-   "source": "云南省人社厅",
-   "region": "云南其他",
-   "region_detail": "",
-   "jtype": "事业编统考",
-   "english": false,
-   "subject_class": "general",
-   "bianzhi": "yes",
-   "age": "",
-   "headcount": null,
-   "deadline": null,
-   "published": "2026-09-25",
-   "first_seen": "2026-09-25",
-   "is_new": false
   }
  ],
  "process": [
@@ -611,7 +611,7 @@
    "region": "云南其他",
    "region_detail": "",
    "published": "2025-07-01",
-   "first_seen": "2026-11-24"
+   "first_seen": "2026-11-25"
   }
  ]
 }
