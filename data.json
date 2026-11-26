@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-25 19:08",
- "generated_date": "2026-11-25",
+ "generated_at": "2026-11-26 09:04",
+ "generated_date": "2026-11-26",
  "sources": [
   {
    "name": "曲靖市人社局",
@@ -88,7 +88,7 @@
   }
  ],
  "total_candidates": 248,
- "excluded": 192,
+ "excluded": 193,
  "jobs": [
   {
    "id": "d79ea75e7394",
@@ -107,7 +107,7 @@
    "deadline": null,
    "published": "2026-11-01",
    "first_seen": "2026-11-25",
-   "is_new": true
+   "is_new": false
   },
   {
    "id": "0893617f8b2b",
@@ -596,15 +596,6 @@
    "first_seen": "2026-11-25"
   },
   {
-   "title": "安顺西秀区东屯学校招聘临聘教师公告2026-10-1416:13[考试公告]",
-   "url": "https://m.gz.huatu.com/2026/1014/2037455.html",
-   "source": "贵州华图",
-   "region": "贵州其他",
-   "region_detail": "",
-   "published": "2026-10-01",
-   "first_seen": "2026-10-14"
-  },
-  {
    "title": "2026年贵阳市乌当区东风幼儿园招聘教师公告2026-10-0714:36[考试公告]",
    "url": "https://m.gz.huatu.com/2026/1007/2036965.html",
    "source": "贵州华图",
@@ -620,7 +611,7 @@
    "region": "云南其他",
    "region_detail": "",
    "published": "2025-07-01",
-   "first_seen": "2026-11-25"
+   "first_seen": "2026-11-26"
   }
  ]
 }
