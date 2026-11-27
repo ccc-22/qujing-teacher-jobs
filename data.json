@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-27 14:36",
+ "generated_at": "2026-11-27 18:44",
  "generated_date": "2026-11-27",
  "sources": [
   {
@@ -42,7 +42,7 @@
    "name": "山香教育",
    "ok": true,
    "pages_ok": 1,
-   "found": 30
+   "found": 0
   },
   {
    "name": "贵州华图",
@@ -87,8 +87,8 @@
    "found": 39
   }
  ],
- "total_candidates": 279,
- "excluded": 224,
+ "total_candidates": 249,
+ "excluded": 195,
  "jobs": [
   {
    "id": "d79ea75e7394",
